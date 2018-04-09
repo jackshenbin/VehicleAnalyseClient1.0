@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Bocom IrasCloud" />
+<meta name="author" content="bocom" />
+<meta charset="UTF-8">
+
+<title>二次识别</title>
+
+<link rel="stylesheet" href="assets/css/bootstrap.css" />
+<link rel="stylesheet" href="assets/css/xenon-core.css" />
+<link rel="stylesheet" href="assets/css/xenon-forms.css" />
+<link rel="stylesheet" href="assets/css/xenon-components.css" />
+
+
+</head>
+<body class="page-body " style="font-family: 微软雅黑; background-color:#2d3b56;" >
+
+<div class="container-fluid "   style="width:100%; margin:0 auto; padding-right: 0px; padding-left: 0px;" id="cn">
+	<!-- 中间内容 -->
+    <div class="page-container"  style="margin-right:0px;padding-right:0px;">
+		<div class="main-content" style="padding-top:0px; " >
+			<div class="row"  style="margin-right:0px;  padding-right:0px;">
+				
+				<div class="col-xs-12" style=" padding-left: 15px; margin-right:0px;  padding-right:0px;text-align: left;z-index:-100;"  >
+					 <object id="iVXSDK" classid="clsid:094500B1-62FC-46B6-BA44-7634CD712A00" width="100%;"
+                                    height="700px">
+                                IRAS控件未加载
+                     </object>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+		
+		
+<script>
+    //   =============基础操作==================
+
+    function IRASInitialization() {
+        val = iVXSDK.IRASInitialization();
+       // MyDiv.innerText = 'IRASInitialization:' + val;
+    }
+    function IRASUninitialization() {
+        val = iVXSDK.IRASUninitialization();
+        //MyDiv.innerText = 'IRASUninitialization:' + val;
+    }
+    window.onload = function () {
+        //alert("IRASInitialization");
+        IRASInitialization();
+    }
+
+	//window.onbeforeunload  onunload
+    window.onbeforeunload = function () {
+        //alert("IRASUninitialization");
+        IRASUninitialization();
+    }
+</script>
+
+</script>
+</body>
+
+
+	
+	
+
+
+
+
+</html>
+

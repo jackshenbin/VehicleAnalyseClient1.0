@@ -1,0 +1,53 @@
+log4cpp.rootCategory=DEBUG, rootAppender,db
+log4cpp.category.NetSDK_Callback=DEBUG, A1
+log4cpp.category.SendPic=DEBUG, SendPic
+log4cpp.category.Heartbeat=WARN, A3
+log4cpp.category.Lock=DEBUG, Lock
+
+
+#log4cpp.appender.rootAppender=ConsoleAppender
+#log4cpp.appender.rootAppender.layout=BasicLayout
+
+
+log4cpp.appender.rootAppender=FileAppender
+log4cpp.appender.rootAppender.fileName=default.log
+log4cpp.appender.rootAppender.layout=PatternLayout
+log4cpp.appender.rootAppender.layout.ConversionPattern=%n %d [%t] %-5p %c - %m
+
+
+log4cpp.appender.db=ConsoleAppender
+log4cpp.appender.db.layout=PatternLayout
+log4cpp.appender.db.layout.ConversionPattern=%n %d [%t] %-5p %c - %m
+
+
+log4cpp.appender.A1=FileAppender
+log4cpp.appender.A1.fileName=NetSDK_Callback.log
+log4cpp.appender.A1.layout=PatternLayout
+log4cpp.appender.A1.layout.ConversionPattern=%n %d [%t] %-5p %c - %m
+
+log4cpp.appender.SendPic=RollingFileAppender
+log4cpp.appender.SendPic.fileName=logs\SendPic.log
+log4cpp.appender.SendPic.maxFileSize=12000000
+log4cpp.appender.SendPic.maxBackupIndex=10
+log4cpp.appender.SendPic.layout=PatternLayout
+log4cpp.appender.SendPic.layout.ConversionPattern=%n %d [%t] %-5p %c - %m
+
+
+log4cpp.appender.A3=RollingFileAppender
+log4cpp.appender.A3.fileName=Heartbeat.log
+log4cpp.appender.A3.maxFileSize=12000000
+log4cpp.appender.A3.maxBackupIndex=10
+log4cpp.appender.A3.layout=PatternLayout
+log4cpp.appender.A3.layout.ConversionPattern=The messAge %m at time %d{%H:%M}%n
+
+log4cpp.appender.Lock=RollingFileAppender
+log4cpp.appender.Lock.fileName=Lock.log
+log4cpp.appender.Lock.maxFileSize=12000000
+log4cpp.appender.Lock.maxBackupIndex=10
+log4cpp.appender.Lock.layout=PatternLayout
+log4cpp.appender.Lock.layout.ConversionPattern=The message %m at time %d{%H:%M}%n
+
+
+log4cpp.category.subNT=INFO, subNT
+log4cpp.appender.subNT=NTEventLogAppender
+log4cpp.appender.subNT.source=log4cpp-test

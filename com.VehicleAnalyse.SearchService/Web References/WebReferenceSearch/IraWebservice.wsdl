@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WSDL:definitions xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/" xmlns:tns="http://www.bocom.com/ira3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:bocom="http://www.bocom.com/ira3.0" name="IraWebservice" targetNamespace="http://www.bocom.com/ira3.0" xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/">
+  <WSDL:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.bocom.com/ira3.0">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:element name="IraWebserviceReq">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="strReqType" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="strReq" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IraWebserviceReqResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="strRsp" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </WSDL:types>
+  <WSDL:message name="IraWebserviceReqRequest">
+    <WSDL:part name="parameters" element="bocom:IraWebserviceReq" />
+  </WSDL:message>
+  <WSDL:message name="IraWebserviceReqResponse">
+    <WSDL:part name="parameters" element="bocom:IraWebserviceReqResponse" />
+  </WSDL:message>
+  <WSDL:portType name="IraWebservicePortType">
+    <WSDL:operation name="IraWebserviceReq">
+      <documentation>Service definition of function bocom__IraWebserviceReq</documentation>
+      <WSDL:input message="bocom:IraWebserviceReqRequest" />
+      <WSDL:output message="bocom:IraWebserviceReqResponse" />
+    </WSDL:operation>
+  </WSDL:portType>
+  <WSDL:binding name="IraWebservice" type="bocom:IraWebservicePortType">
+    <SOAP:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <WSDL:operation name="IraWebserviceReq">
+      <SOAP:operation soapAction="" />
+      <WSDL:input>
+        <SOAP:body use="literal" parts="parameters" />
+      </WSDL:input>
+      <WSDL:output>
+        <SOAP:body use="literal" parts="parameters" />
+      </WSDL:output>
+    </WSDL:operation>
+  </WSDL:binding>
+  <WSDL:service name="IraWebservice">
+    <documentation>gSOAP 2.8.9 generated service definition</documentation>
+    <WSDL:port name="IraWebservice" binding="bocom:IraWebservice">
+      <SOAP:address location="http://www.bocom.com/ira3.0" />
+    </WSDL:port>
+  </WSDL:service>
+</WSDL:definitions>

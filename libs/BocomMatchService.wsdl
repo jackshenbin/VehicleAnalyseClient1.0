@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="IraWebservice"
+ targetNamespace="http://www.bocom.com/ira3.0"
+ xmlns:tns="http://www.bocom.com/ira3.0"
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:bocom="http://www.bocom.com/ira3.0"
+ xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/"
+ xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/"
+ xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/"
+ xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/"
+ xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+<types>
+
+ <schema targetNamespace="http://www.bocom.com/ira3.0"
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:bocom="http://www.bocom.com/ira3.0"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+  <!-- operation request element -->
+  <element name="IraWebserviceReq">
+   <complexType>
+    <sequence>
+     <element name="strReqType" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- bocom__IraWebserviceReq::strReqType -->
+     <element name="strReq" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- bocom__IraWebserviceReq::strReq -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="IraWebserviceReqResponse">
+   <complexType>
+    <sequence>
+     <element name="strRsp" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- bocom__IraWebserviceReq::strRsp -->
+    </sequence>
+   </complexType>
+  </element>
+ </schema>
+
+</types>
+
+<message name="IraWebserviceReqRequest">
+ <part name="parameters" element="bocom:IraWebserviceReq"/><!-- bocom__IraWebserviceReq::bocom__IraWebserviceReq -->
+</message>
+
+<message name="IraWebserviceReqResponse">
+ <part name="parameters" element="bocom:IraWebserviceReqResponse"/>
+</message>
+
+<portType name="IraWebservicePortType">
+ <operation name="IraWebserviceReq">
+  <documentation>Service definition of function bocom__IraWebserviceReq</documentation>
+  <input message="tns:IraWebserviceReqRequest"/>
+  <output message="tns:IraWebserviceReqResponse"/>
+ </operation>
+</portType>
+
+<binding name="IraWebservice" type="tns:IraWebservicePortType">
+ <SOAP:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+ <operation name="IraWebserviceReq">
+  <SOAP:operation soapAction=""/>
+  <input>
+     <SOAP:body parts="parameters" use="literal"/>
+  </input>
+  <output>
+     <SOAP:body parts="parameters" use="literal"/>
+  </output>
+ </operation>
+</binding>
+
+<service name="IraWebservice">
+ <documentation>gSOAP 2.8.9 generated service definition</documentation>
+ <port name="IraWebservice" binding="tns:IraWebservice">
+  <SOAP:address location="http://www.bocom.com/ira3.0"/>
+ </port>
+</service>
+
+</definitions>

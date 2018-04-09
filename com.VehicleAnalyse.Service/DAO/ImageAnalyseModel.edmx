@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ImageAnalyseDBModel.Store" Alias="Self" Provider="System.Data.SQLite" ProviderManifestToken="ISO8601" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ImageAnalyseDBModelStoreContainer">
+          <EntitySet Name="AnalyseResult" EntityType="ImageAnalyseDBModel.Store.AnalyseResult" store:Type="Tables" />
+          <EntitySet Name="IllegalBehaviors" EntityType="ImageAnalyseDBModel.Store.IllegalBehaviors" store:Type="Tables" />
+          <EntitySet Name="PlateColor" EntityType="ImageAnalyseDBModel.Store.PlateColor" store:Type="Tables" />
+          <EntitySet Name="PlateStructure" EntityType="ImageAnalyseDBModel.Store.PlateStructure" store:Type="Tables" />
+          <EntitySet Name="Task" EntityType="ImageAnalyseDBModel.Store.Task" store:Type="Tables" />
+          <EntitySet Name="VehicleBrand" EntityType="ImageAnalyseDBModel.Store.VehicleBrand" store:Type="Tables" />
+          <EntitySet Name="VehicleColor" EntityType="ImageAnalyseDBModel.Store.VehicleColor" store:Type="Tables" />
+          <EntitySet Name="VehicleDetailType" EntityType="ImageAnalyseDBModel.Store.VehicleDetailType" store:Type="Tables" />
+          <EntitySet Name="VehicleType" EntityType="ImageAnalyseDBModel.Store.VehicleType" store:Type="Tables" />
+          <AssociationSet Name="FK_AnalyseResult_0" Association="ImageAnalyseDBModel.Store.FK_AnalyseResult_0">
+            <End Role="IllegalBehaviors" EntitySet="IllegalBehaviors" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResult" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_1" Association="ImageAnalyseDBModel.Store.FK_AnalyseResult_1">
+            <End Role="IllegalBehaviors" EntitySet="IllegalBehaviors" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResult" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_2" Association="ImageAnalyseDBModel.Store.FK_AnalyseResult_2">
+            <End Role="VehicleBrand" EntitySet="VehicleBrand" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResult" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_3" Association="ImageAnalyseDBModel.Store.FK_AnalyseResult_3">
+            <End Role="VehicleColor" EntitySet="VehicleColor" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResult" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_4" Association="ImageAnalyseDBModel.Store.FK_AnalyseResult_4">
+            <End Role="PlateStructure" EntitySet="PlateStructure" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResult" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_5" Association="ImageAnalyseDBModel.Store.FK_AnalyseResult_5">
+            <End Role="VehicleDetailType" EntitySet="VehicleDetailType" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResult" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_6" Association="ImageAnalyseDBModel.Store.FK_AnalyseResult_6">
+            <End Role="VehicleType" EntitySet="VehicleType" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResult" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_7" Association="ImageAnalyseDBModel.Store.FK_AnalyseResult_7">
+            <End Role="PlateColor" EntitySet="PlateColor" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResult" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VehicleBrand_0" Association="ImageAnalyseDBModel.Store.FK_VehicleBrand_0">
+            <End Role="VehicleBrand" EntitySet="VehicleBrand" />
+            <End Role="VehicleBrand1" EntitySet="VehicleBrand" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AnalyseResult">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TaskId" Type="integer" Nullable="false" />
+          <Property Name="FileName" Type="nvarchar" Nullable="false" />
+          <Property Name="CameraId" Type="integer" Nullable="false" />
+          <Property Name="PlateNumber" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="PlateReliability" Type="tinyint" />
+          <Property Name="PlateColor" Type="tinyint" Nullable="false" />
+          <Property Name="VehicleType" Type="tinyint" Nullable="false" />
+          <Property Name="DetailVehicleType" Type="tinyint" Nullable="false" />
+          <Property Name="PlateRegion" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="PlateType" Type="tinyint" Nullable="false" />
+          <Property Name="VehicleColor" Type="tinyint" Nullable="false" />
+          <Property Name="Manufacturer" Type="integer" Nullable="false" />
+          <Property Name="ManufactureReliability" Type="tinyint" />
+          <Property Name="ErrorCode" Type="smallint" Nullable="false" />
+          <Property Name="VehicleRegion" Type="nvarchar" MaxLength="50" />
+          <Property Name="DriverRegion" Type="nvarchar" MaxLength="50" />
+          <Property Name="DriverIllegalBehavior" Type="integer" />
+          <Property Name="CoDriverRegion" Type="nvarchar" MaxLength="50" />
+          <Property Name="CoDriverIllegalBehavior" Type="integer" />
+        </EntityType>
+        <EntityType Name="IllegalBehaviors">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NotWearSafeBelt" Type="tinyint" Nullable="false" />
+          <Property Name="SunShielding" Type="tinyint" Nullable="false" />
+          <Property Name="PhoneCalling" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PlateColor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="tinyint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PlateStructure">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="tinyint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="URL" Type="nvarchar" Nullable="false" />
+          <Property Name="FileType" Type="decimal" Nullable="false" Precision="53" />
+          <Property Name="Status" Type="decimal" Nullable="false" Precision="53" />
+          <Property Name="FileCount" Type="integer" />
+          <Property Name="NotRecognizedCount" Type="integer" />
+          <Property Name="RecognizedCount" Type="integer" />
+          <Property Name="NoPlateCount" Type="integer" />
+          <Property Name="ImageErrorCount" Type="integer" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="FinishedTime" Type="datetime" />
+          <Property Name="FileAccessUserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="FileAccessPassword" Type="nvarchar" MaxLength="50" />
+          <Property Name="CameraId" Type="integer" />
+          <Property Name="StartAnalyseTime" Type="datetime" />
+          <Property Name="Calibration_PlateAreaX" Type="int" Nullable="false" />
+          <Property Name="Calibration_PlateAreaY" Type="int" Nullable="false" />
+          <Property Name="Calibration_PlateAreaW" Type="int" Nullable="false" />
+          <Property Name="Calibration_PlateAreaH" Type="int" Nullable="false" />
+          <Property Name="Calibration_PicW" Type="int" Nullable="false" />
+          <Property Name="Calibration_PicH" Type="int" Nullable="false" />
+          <Property Name="Calibration_DetectionAreaX" Type="int" Nullable="false" />
+          <Property Name="Calibration_DetectionAreaY" Type="int" Nullable="false" />
+          <Property Name="Calibration_DetectionAreaW" Type="int" Nullable="false" />
+          <Property Name="Calibration_DetectionAreaH" Type="int" Nullable="false" />
+          <Property Name="Calibration_PlateLocationType" Type="tinyint" Nullable="false" />
+          <Property Name="Calibration_DateTime" Type="datetime" Nullable="false" />
+          <Property Name="Calibration_SnapshotInterval" Type="smallint" Nullable="false" />
+          <Property Name="Calibration_PlateRangeMin" Type="int" Nullable="false" />
+          <Property Name="Calibration_PlateRangeMax" Type="int" Nullable="false" />
+          <Property Name="IncludeChildFolder" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VehicleBrand">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" />
+          <Property Name="ParentId" Type="integer" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="FrontPic" Type="nvarchar" MaxLength="260" />
+          <Property Name="BackPic" Type="nvarchar" MaxLength="260" />
+          <Property Name="Logo" Type="blob" />
+          <Property Name="Front" Type="blob" />
+          <Property Name="Back" Type="blob" />
+        </EntityType>
+        <EntityType Name="VehicleColor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="tinyint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="VehicleDetailType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="tinyint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="DisplayIndex" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VehicleType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="tinyint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_AnalyseResult_0">
+          <End Role="IllegalBehaviors" Type="ImageAnalyseDBModel.Store.IllegalBehaviors" Multiplicity="0..1" />
+          <End Role="AnalyseResult" Type="ImageAnalyseDBModel.Store.AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IllegalBehaviors">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="CoDriverIllegalBehavior" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_1">
+          <End Role="IllegalBehaviors" Type="ImageAnalyseDBModel.Store.IllegalBehaviors" Multiplicity="0..1" />
+          <End Role="AnalyseResult" Type="ImageAnalyseDBModel.Store.AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IllegalBehaviors">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="DriverIllegalBehavior" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_2">
+          <End Role="VehicleBrand" Type="ImageAnalyseDBModel.Store.VehicleBrand" Multiplicity="1" />
+          <End Role="AnalyseResult" Type="ImageAnalyseDBModel.Store.AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VehicleBrand">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="Manufacturer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_3">
+          <End Role="VehicleColor" Type="ImageAnalyseDBModel.Store.VehicleColor" Multiplicity="1" />
+          <End Role="AnalyseResult" Type="ImageAnalyseDBModel.Store.AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VehicleColor">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="VehicleColor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_4">
+          <End Role="PlateStructure" Type="ImageAnalyseDBModel.Store.PlateStructure" Multiplicity="1" />
+          <End Role="AnalyseResult" Type="ImageAnalyseDBModel.Store.AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PlateStructure">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="PlateType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_5">
+          <End Role="VehicleDetailType" Type="ImageAnalyseDBModel.Store.VehicleDetailType" Multiplicity="1" />
+          <End Role="AnalyseResult" Type="ImageAnalyseDBModel.Store.AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VehicleDetailType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="DetailVehicleType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_6">
+          <End Role="VehicleType" Type="ImageAnalyseDBModel.Store.VehicleType" Multiplicity="1" />
+          <End Role="AnalyseResult" Type="ImageAnalyseDBModel.Store.AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VehicleType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="VehicleType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_7">
+          <End Role="PlateColor" Type="ImageAnalyseDBModel.Store.PlateColor" Multiplicity="1" />
+          <End Role="AnalyseResult" Type="ImageAnalyseDBModel.Store.AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PlateColor">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="PlateColor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VehicleBrand_0">
+          <End Role="VehicleBrand" Type="ImageAnalyseDBModel.Store.VehicleBrand" Multiplicity="0..1" />
+          <End Role="VehicleBrand1" Type="ImageAnalyseDBModel.Store.VehicleBrand" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VehicleBrand">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="VehicleBrand1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ImageAnalyseDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ImageAnalyseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AnalyseResults" EntityType="ImageAnalyseDBModel.AnalyseResult" />
+          <EntitySet Name="PlateColors" EntityType="ImageAnalyseDBModel.PlateColor" />
+          <EntitySet Name="PlateStructures" EntityType="ImageAnalyseDBModel.PlateStructure" />
+          <EntitySet Name="Tasks" EntityType="ImageAnalyseDBModel.Task" />
+          <EntitySet Name="VehicleBrands" EntityType="ImageAnalyseDBModel.VehicleBrand" />
+          <EntitySet Name="VehicleColors" EntityType="ImageAnalyseDBModel.VehicleColor" />
+          <EntitySet Name="VehicleDetailTypes" EntityType="ImageAnalyseDBModel.VehicleDetailType" />
+          <EntitySet Name="VehicleTypes" EntityType="ImageAnalyseDBModel.VehicleType" />
+          <AssociationSet Name="FK_AnalyseResult_0" Association="ImageAnalyseDBModel.FK_AnalyseResult_0">
+            <End Role="VehicleColor" EntitySet="VehicleColors" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResults" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_1" Association="ImageAnalyseDBModel.FK_AnalyseResult_1">
+            <End Role="PlateColor" EntitySet="PlateColors" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResults" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_2" Association="ImageAnalyseDBModel.FK_AnalyseResult_2">
+            <End Role="VehicleType" EntitySet="VehicleTypes" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResults" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_3" Association="ImageAnalyseDBModel.FK_AnalyseResult_3">
+            <End Role="VehicleDetailType" EntitySet="VehicleDetailTypes" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResults" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_4" Association="ImageAnalyseDBModel.FK_AnalyseResult_4">
+            <End Role="PlateStructure" EntitySet="PlateStructures" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResults" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_5" Association="ImageAnalyseDBModel.FK_AnalyseResult_5">
+            <End Role="VehicleBrand" EntitySet="VehicleBrands" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResults" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VehicleBrand_0" Association="ImageAnalyseDBModel.FK_VehicleBrand_0">
+            <End Role="VehicleBrand" EntitySet="VehicleBrands" />
+            <End Role="VehicleBrand1" EntitySet="VehicleBrands" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_01" Association="ImageAnalyseDBModel.FK_AnalyseResult_01">
+            <End Role="Task" EntitySet="Tasks" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResults" />
+          </AssociationSet>
+          <EntitySet Name="IllegalBehaviors" EntityType="ImageAnalyseDBModel.IllegalBehavior" />
+          <AssociationSet Name="FK_AnalyseResult_02" Association="ImageAnalyseDBModel.FK_AnalyseResult_02">
+            <End Role="IllegalBehavior" EntitySet="IllegalBehaviors" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResults" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyseResult_11" Association="ImageAnalyseDBModel.FK_AnalyseResult_11">
+            <End Role="IllegalBehavior" EntitySet="IllegalBehaviors" />
+            <End Role="AnalyseResult" EntitySet="AnalyseResults" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AnalyseResult">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="TaskId" Nullable="false" />
+          <Property Type="String" Name="FileName" Nullable="false" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CameraId" Nullable="false" />
+          <Property Type="String" Name="PlateNumber" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Byte" Name="PlateColor" Nullable="false" />
+          <Property Type="Byte" Name="VehicleType" Nullable="false" />
+          <Property Type="Byte" Name="DetailVehicleType" Nullable="false" />
+          <Property Type="String" Name="PlateRegion" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Byte" Name="PlateType" Nullable="false" />
+          <Property Type="Byte" Name="VehicleColor" Nullable="false" />
+          <Property Type="Int64" Name="Manufacturer" Nullable="false" />
+          <Property Type="Int16" Name="ErrorCode" Nullable="false" />
+          <NavigationProperty Name="VehicleColor1" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_0" FromRole="AnalyseResult" ToRole="VehicleColor" />
+          <NavigationProperty Name="PlateColor1" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_1" FromRole="AnalyseResult" ToRole="PlateColor" />
+          <NavigationProperty Name="VehicleType1" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_2" FromRole="AnalyseResult" ToRole="VehicleType" />
+          <NavigationProperty Name="VehicleDetailType" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_3" FromRole="AnalyseResult" ToRole="VehicleDetailType" />
+          <NavigationProperty Name="PlateStructure" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_4" FromRole="AnalyseResult" ToRole="PlateStructure" />
+          <NavigationProperty Name="VehicleBrand" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_5" FromRole="AnalyseResult" ToRole="VehicleBrand" />
+          <NavigationProperty Name="Task" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_01" FromRole="AnalyseResult" ToRole="Task" />
+          <Property Type="String" Name="DriverRegion" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="DriverIllegalBehavior" />
+          <Property Type="String" Name="CoDriverRegion" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CoDriverIllegalBehavior" />
+          <NavigationProperty Name="IllegalBehavior" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_02" FromRole="AnalyseResult" ToRole="IllegalBehavior" />
+          <NavigationProperty Name="IllegalBehavior1" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_11" FromRole="AnalyseResult" ToRole="IllegalBehavior" />
+          <Property Type="Byte" Name="PlateReliability" />
+          <Property Type="Byte" Name="ManufactureReliability" />
+          <Property Type="String" Name="VehicleRegion" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PlateColor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Byte" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AnalyseResults" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_1" FromRole="PlateColor" ToRole="AnalyseResult" />
+        </EntityType>
+        <EntityType Name="PlateStructure">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Byte" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AnalyseResults" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_4" FromRole="PlateStructure" ToRole="AnalyseResult" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URL" Nullable="false" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="FileType" Nullable="false" Precision="53" Scale="0" />
+          <Property Type="Decimal" Name="Status" Nullable="false" Precision="53" Scale="0" />
+          <Property Type="Int64" Name="FileCount" />
+          <Property Type="Int64" Name="NotRecognizedCount" />
+          <Property Type="Int64" Name="RecognizedCount" />
+          <Property Type="Int64" Name="ImageErrorCount" />
+          <Property Type="String" Name="FileAccessUserName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FileAccessPassword" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="CameraId" />
+          <Property Type="DateTime" Name="StartAnalyseTime" />
+          <Property Type="Int32" Name="Calibration_PlateAreaX" Nullable="false" />
+          <Property Type="Int32" Name="Calibration_PlateAreaY" Nullable="false" />
+          <Property Type="Int32" Name="Calibration_PlateAreaW" Nullable="false" />
+          <Property Type="Int32" Name="Calibration_PlateAreaH" Nullable="false" />
+          <Property Type="Int32" Name="Calibration_PicW" Nullable="false" />
+          <Property Type="Int32" Name="Calibration_PicH" Nullable="false" />
+          <Property Type="Int32" Name="Calibration_DetectionAreaX" Nullable="false" />
+          <Property Type="Int32" Name="Calibration_DetectionAreaY" Nullable="false" />
+          <Property Type="Int32" Name="Calibration_DetectionAreaW" Nullable="false" />
+          <Property Type="Int32" Name="Calibration_DetectionAreaH" Nullable="false" />
+          <Property Type="Byte" Name="Calibration_PlateLocationType" Nullable="false" />
+          <Property Type="DateTime" Name="Calibration_DateTime" Nullable="false" />
+          <Property Type="Int16" Name="Calibration_SnapshotInterval" Nullable="false" />
+          <Property Type="DateTime" Name="CreateTime" />
+          <Property Type="DateTime" Name="FinishedTime" />
+          <NavigationProperty Name="AnalyseResults" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_01" FromRole="Task" ToRole="AnalyseResult" />
+          <Property Type="Int64" Name="NoPlateCount" />
+          <Property Type="Int32" Name="Calibration_PlateRangeMin" Nullable="false" />
+          <Property Type="Int32" Name="Calibration_PlateRangeMax" Nullable="false" />
+          <Property Type="Boolean" Name="IncludeChildFolder" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VehicleBrand">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int64" Name="Id" Nullable="false" />
+          <Property Type="Int64" Name="ParentId" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FrontPic" MaxLength="260" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="BackPic" MaxLength="260" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AnalyseResults" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_5" FromRole="VehicleBrand" ToRole="AnalyseResult" />
+          <NavigationProperty Name="VehicleBrand1" Relationship="ImageAnalyseDBModel.FK_VehicleBrand_0" FromRole="VehicleBrand" ToRole="VehicleBrand1" />
+          <NavigationProperty Name="VehicleBrand2" Relationship="ImageAnalyseDBModel.FK_VehicleBrand_0" FromRole="VehicleBrand1" ToRole="VehicleBrand" />
+          <Property Type="Binary" Name="Logo" MaxLength="2147483647" FixedLength="false" />
+          <Property Type="Binary" Name="Front" MaxLength="2147483647" FixedLength="false" />
+          <Property Type="Binary" Name="Back" MaxLength="2147483647" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="VehicleColor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Byte" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AnalyseResults" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_0" FromRole="VehicleColor" ToRole="AnalyseResult" />
+        </EntityType>
+        <EntityType Name="VehicleDetailType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Byte" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AnalyseResults" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_3" FromRole="VehicleDetailType" ToRole="AnalyseResult" />
+          <Property Type="Byte" Name="DisplayIndex" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VehicleType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Byte" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AnalyseResults" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_2" FromRole="VehicleType" ToRole="AnalyseResult" />
+        </EntityType>
+        <Association Name="FK_AnalyseResult_0">
+          <End Type="ImageAnalyseDBModel.VehicleColor" Role="VehicleColor" Multiplicity="1" />
+          <End Type="ImageAnalyseDBModel.AnalyseResult" Role="AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VehicleColor">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="VehicleColor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_1">
+          <End Type="ImageAnalyseDBModel.PlateColor" Role="PlateColor" Multiplicity="1" />
+          <End Type="ImageAnalyseDBModel.AnalyseResult" Role="AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PlateColor">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="PlateColor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_2">
+          <End Type="ImageAnalyseDBModel.VehicleType" Role="VehicleType" Multiplicity="1" />
+          <End Type="ImageAnalyseDBModel.AnalyseResult" Role="AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VehicleType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="VehicleType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_3">
+          <End Type="ImageAnalyseDBModel.VehicleDetailType" Role="VehicleDetailType" Multiplicity="1" />
+          <End Type="ImageAnalyseDBModel.AnalyseResult" Role="AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VehicleDetailType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="DetailVehicleType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_4">
+          <End Type="ImageAnalyseDBModel.PlateStructure" Role="PlateStructure" Multiplicity="1" />
+          <End Type="ImageAnalyseDBModel.AnalyseResult" Role="AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PlateStructure">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="PlateType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_5">
+          <End Type="ImageAnalyseDBModel.VehicleBrand" Role="VehicleBrand" Multiplicity="1" />
+          <End Type="ImageAnalyseDBModel.AnalyseResult" Role="AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VehicleBrand">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="Manufacturer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VehicleBrand_0">
+          <End Type="ImageAnalyseDBModel.VehicleBrand" Role="VehicleBrand" Multiplicity="0..1" />
+          <End Type="ImageAnalyseDBModel.VehicleBrand" Role="VehicleBrand1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VehicleBrand">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="VehicleBrand1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_01">
+          <End Type="ImageAnalyseDBModel.Task" Role="Task" Multiplicity="1" />
+          <End Type="ImageAnalyseDBModel.AnalyseResult" Role="AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Task">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="TaskId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="IllegalBehavior">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Byte" Name="NotWearSafeBelt" Nullable="false" />
+          <Property Type="Byte" Name="SunShielding" Nullable="false" />
+          <Property Type="Byte" Name="PhoneCalling" Nullable="false" />
+          <NavigationProperty Name="AnalyseResults" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_02" FromRole="IllegalBehavior" ToRole="AnalyseResult" />
+          <NavigationProperty Name="AnalyseResults1" Relationship="ImageAnalyseDBModel.FK_AnalyseResult_11" FromRole="IllegalBehavior" ToRole="AnalyseResult" />
+        </EntityType>
+        <Association Name="FK_AnalyseResult_02">
+          <End Type="ImageAnalyseDBModel.IllegalBehavior" Role="IllegalBehavior" Multiplicity="0..1" />
+          <End Type="ImageAnalyseDBModel.AnalyseResult" Role="AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IllegalBehavior">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="CoDriverIllegalBehavior" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyseResult_11">
+          <End Type="ImageAnalyseDBModel.IllegalBehavior" Role="IllegalBehavior" Multiplicity="0..1" />
+          <End Type="ImageAnalyseDBModel.AnalyseResult" Role="AnalyseResult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IllegalBehavior">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyseResult">
+              <PropertyRef Name="DriverIllegalBehavior" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ImageAnalyseDBModelStoreContainer" CdmEntityContainer="ImageAnalyseEntities">
+          <EntitySetMapping Name="AnalyseResults">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.AnalyseResult">
+              <MappingFragment StoreEntitySet="AnalyseResult">
+                <ScalarProperty Name="VehicleRegion" ColumnName="VehicleRegion" />
+                <ScalarProperty Name="ManufactureReliability" ColumnName="ManufactureReliability" />
+                <ScalarProperty Name="PlateReliability" ColumnName="PlateReliability" />
+                <ScalarProperty Name="CoDriverIllegalBehavior" ColumnName="CoDriverIllegalBehavior" />
+                <ScalarProperty Name="CoDriverRegion" ColumnName="CoDriverRegion" />
+                <ScalarProperty Name="DriverIllegalBehavior" ColumnName="DriverIllegalBehavior" />
+                <ScalarProperty Name="DriverRegion" ColumnName="DriverRegion" />
+                <ScalarProperty Name="ErrorCode" ColumnName="ErrorCode" />
+                <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+                <ScalarProperty Name="VehicleColor" ColumnName="VehicleColor" />
+                <ScalarProperty Name="PlateType" ColumnName="PlateType" />
+                <ScalarProperty Name="PlateRegion" ColumnName="PlateRegion" />
+                <ScalarProperty Name="DetailVehicleType" ColumnName="DetailVehicleType" />
+                <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+                <ScalarProperty Name="PlateColor" ColumnName="PlateColor" />
+                <ScalarProperty Name="PlateNumber" ColumnName="PlateNumber" />
+                <ScalarProperty Name="CameraId" ColumnName="CameraId" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PlateColors">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.PlateColor">
+              <MappingFragment StoreEntitySet="PlateColor">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PlateStructures">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.PlateStructure">
+              <MappingFragment StoreEntitySet="PlateStructure">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tasks">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.Task">
+              <MappingFragment StoreEntitySet="Task">
+                <ScalarProperty Name="IncludeChildFolder" ColumnName="IncludeChildFolder" />
+                <ScalarProperty Name="Calibration_PlateRangeMax" ColumnName="Calibration_PlateRangeMax" />
+                <ScalarProperty Name="Calibration_PlateRangeMin" ColumnName="Calibration_PlateRangeMin" />
+                <ScalarProperty Name="NoPlateCount" ColumnName="NoPlateCount" />
+                <ScalarProperty Name="FinishedTime" ColumnName="FinishedTime" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="Calibration_SnapshotInterval" ColumnName="Calibration_SnapshotInterval" />
+                <ScalarProperty Name="Calibration_DateTime" ColumnName="Calibration_DateTime" />
+                <ScalarProperty Name="Calibration_PlateLocationType" ColumnName="Calibration_PlateLocationType" />
+                <ScalarProperty Name="Calibration_DetectionAreaH" ColumnName="Calibration_DetectionAreaH" />
+                <ScalarProperty Name="Calibration_DetectionAreaW" ColumnName="Calibration_DetectionAreaW" />
+                <ScalarProperty Name="Calibration_DetectionAreaY" ColumnName="Calibration_DetectionAreaY" />
+                <ScalarProperty Name="Calibration_DetectionAreaX" ColumnName="Calibration_DetectionAreaX" />
+                <ScalarProperty Name="Calibration_PicH" ColumnName="Calibration_PicH" />
+                <ScalarProperty Name="Calibration_PicW" ColumnName="Calibration_PicW" />
+                <ScalarProperty Name="Calibration_PlateAreaH" ColumnName="Calibration_PlateAreaH" />
+                <ScalarProperty Name="Calibration_PlateAreaW" ColumnName="Calibration_PlateAreaW" />
+                <ScalarProperty Name="Calibration_PlateAreaY" ColumnName="Calibration_PlateAreaY" />
+                <ScalarProperty Name="Calibration_PlateAreaX" ColumnName="Calibration_PlateAreaX" />
+                <ScalarProperty Name="StartAnalyseTime" ColumnName="StartAnalyseTime" />
+                <ScalarProperty Name="CameraId" ColumnName="CameraId" />
+                <ScalarProperty Name="FileAccessPassword" ColumnName="FileAccessPassword" />
+                <ScalarProperty Name="FileAccessUserName" ColumnName="FileAccessUserName" />
+                <ScalarProperty Name="ImageErrorCount" ColumnName="ImageErrorCount" />
+                <ScalarProperty Name="RecognizedCount" ColumnName="RecognizedCount" />
+                <ScalarProperty Name="NotRecognizedCount" ColumnName="NotRecognizedCount" />
+                <ScalarProperty Name="FileCount" ColumnName="FileCount" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="FileType" ColumnName="FileType" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VehicleBrands">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.VehicleBrand">
+              <MappingFragment StoreEntitySet="VehicleBrand">
+                <ScalarProperty Name="Back" ColumnName="Back" />
+                <ScalarProperty Name="Front" ColumnName="Front" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="BackPic" ColumnName="BackPic" />
+                <ScalarProperty Name="FrontPic" ColumnName="FrontPic" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VehicleColors">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.VehicleColor">
+              <MappingFragment StoreEntitySet="VehicleColor">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VehicleDetailTypes">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.VehicleDetailType">
+              <MappingFragment StoreEntitySet="VehicleDetailType">
+                <ScalarProperty Name="DisplayIndex" ColumnName="DisplayIndex" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VehicleTypes">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.VehicleType">
+              <MappingFragment StoreEntitySet="VehicleType">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IllegalBehaviors">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.IllegalBehavior">
+              <MappingFragment StoreEntitySet="IllegalBehaviors">
+                <ScalarProperty Name="PhoneCalling" ColumnName="PhoneCalling" />
+                <ScalarProperty Name="SunShielding" ColumnName="SunShielding" />
+                <ScalarProperty Name="NotWearSafeBelt" ColumnName="NotWearSafeBelt" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ImageAnalyseModel" ZoomLevel="106">
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.AnalyseResult" Width="2.375" PointX="3" PointY="1" Height="4.6443082682291656" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.PlateColor" Width="1.5" PointX="0.75" PointY="2.625" Height="1.5879931640625" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.PlateStructure" Width="1.5" PointX="0.75" PointY="5.75" Height="1.5879931640625031" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.Task" Width="2.75" PointX="5.75" PointY="0.75" Height="5.9814461263020817" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.VehicleBrand" Width="1.5" PointX="0.75" PointY="8" Height="2.5430916341145888" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.VehicleColor" Width="1.5" PointX="0.75" PointY="11.375" Height="1.5879931640625031" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.VehicleDetailType" Width="1.5" PointX="0.75" PointY="13.625" Height="1.5879931640625031" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.VehicleType" Width="1.5" PointX="0.75" PointY="16" Height="1.5879931640625031" />
+        <AssociationConnector Association="ImageAnalyseDBModel.FK_AnalyseResult_0" >
+          <ConnectorPoint PointX="2.25" PointY="12.168996582031252" />
+          <ConnectorPoint PointX="3.7280779688517254" PointY="12.168996582031252" />
+          <ConnectorPoint PointX="3.8947446355183923" PointY="12.168996582031252" />
+          <ConnectorPoint PointX="4.0574420656840013" PointY="12.168996582031252" />
+          <ConnectorPoint PointX="4.2241087323506674" PointY="12.168996582031252" />
+          <ConnectorPoint PointX="4.3868061625162769" PointY="12.168996582031252" />
+          <ConnectorPoint PointX="4.5534728291829429" PointY="12.168996582031252" />
+          <ConnectorPoint PointX="4.7923904028320319" PointY="12.168996582031252" />
+          <ConnectorPoint PointX="4.7923904028320319" PointY="5.6443082682291656" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageAnalyseDBModel.FK_AnalyseResult_1" >
+          <ConnectorPoint PointX="2.25" PointY="3.41899658203125" />
+          <ConnectorPoint PointX="3" PointY="3.41899658203125" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageAnalyseDBModel.FK_AnalyseResult_2" >
+          <ConnectorPoint PointX="2.25" PointY="16.793996582031252" />
+          <ConnectorPoint PointX="3.8114113021850589" PointY="16.793996582031252" />
+          <ConnectorPoint PointX="3.8114113021850589" PointY="5.6443082682291656" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageAnalyseDBModel.FK_AnalyseResult_3" >
+          <ConnectorPoint PointX="2.25" PointY="14.514506429036459" />
+          <ConnectorPoint PointX="3.7280779688517254" PointY="14.514506429036459" />
+          <ConnectorPoint PointX="3.8947446355183923" PointY="14.514506429036459" />
+          <ConnectorPoint PointX="4.0574420656840013" PointY="14.514506429036459" />
+          <ConnectorPoint PointX="4.2241087323506674" PointY="14.514506429036459" />
+          <ConnectorPoint PointX="4.47013949584961" PointY="14.514506429036459" />
+          <ConnectorPoint PointX="4.47013949584961" PointY="5.6443082682291656" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageAnalyseDBModel.FK_AnalyseResult_4" >
+          <ConnectorPoint PointX="2.25" PointY="6.9521975276692727" />
+          <ConnectorPoint PointX="3.206214507751465" PointY="6.9521975276692727" />
+          <ConnectorPoint PointX="3.206214507751465" PointY="5.6443082682291656" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageAnalyseDBModel.FK_AnalyseResult_5" >
+          <ConnectorPoint PointX="2.25" PointY="9.2715458170572944" />
+          <ConnectorPoint PointX="3.5088129049682619" PointY="9.2715458170572944" />
+          <ConnectorPoint PointX="3.5088129049682619" PointY="5.6443082682291656" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageAnalyseDBModel.FK_VehicleBrand_0" >
+          <ConnectorPoint PointX="1.2819230769230767" PointY="10.543091634114589" />
+          <ConnectorPoint PointX="1.2819230769230767" PointY="10.793091634114589" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="10.793091634114589" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="10.543091634114589" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageAnalyseDBModel.FK_AnalyseResult_01" >
+          <ConnectorPoint PointX="5.75" PointY="3.3221541341145828" />
+          <ConnectorPoint PointX="5.375" PointY="3.3221541341145828" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.IllegalBehavior" Width="1.5" PointX="0.75" PointY="18.875" Height="2.1610522460937531" />
+        <AssociationConnector Association="ImageAnalyseDBModel.FK_AnalyseResult_02" >
+          <ConnectorPoint PointX="2.25" PointY="20.330583210296634" />
+          <ConnectorPoint PointX="5.1149477014160158" PointY="20.330583210296634" />
+          <ConnectorPoint PointX="5.1149477014160158" PointY="5.6443082682291656" />
+        </AssociationConnector>
+        <AssociationConnector Association="ImageAnalyseDBModel.FK_AnalyseResult_11" >
+          <ConnectorPoint PointX="2.25" PointY="19.571539105148318" />
+          <ConnectorPoint PointX="4.1407753990173344" PointY="19.571539105148318" />
+          <ConnectorPoint PointX="4.1407753990173344" PointY="5.6443082682291656" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

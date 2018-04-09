@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{272F0C1A-AF98-486B-9A57-BB2016C2A542}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.VehicleAnalyse.Main</RootNamespace>
+    <AssemblyName>VehicleAnalyse</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\setup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>car_32px_1180294_easyicon.net.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Imaging">
+      <HintPath>..\libs\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=10.5.0.3, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\DevExpress.BonusSkins.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.Data.v12.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v12.1.Core, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.Office.v12.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.Printing.v12.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.RichEdit.v12.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.Tutorials.v12.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.Utils.v12.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.XtraBars.v12.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.XtraEditors.v12.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.XtraGrid.v12.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.XtraLayout.v12.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.XtraRichEdit.v12.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.XtraTreeList.v12.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IPAddressControlLib">
+      <HintPath>..\libs\IPAddressControlLib.DLL</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>..\libs\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="MyLog4Net, Version=3.1.5869.19557, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\MyLog4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <HintPath>..\libs\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=2.0.38.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\libs\System.Data.SQLite.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Framework\Container.cs" />
+    <Compile Include="Framework\Environment.cs" />
+    <Compile Include="Framework\InteractionService.cs" />
+    <Compile Include="Framework\UIEvents.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AddEditTaskViewModel.cs" />
+    <Compile Include="ViewModels\NoGroupSubResultPageViewModel.cs" />
+    <Compile Include="ViewModels\SingleResultDetailViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\PlateGroupSubResultPageViewModel.cs" />
+    <Compile Include="ViewModels\ResultPageViewModel.cs" />
+    <Compile Include="ViewModels\ViewResultImageViewModel.cs" />
+    <Compile Include="ViewModels\SearchSettingsViewModel.cs" />
+    <Compile Include="ViewModels\TaskList2ViewModel.cs" />
+    <Compile Include="ViewModels\CompareSearchResultPageViewModel.cs" />
+    <Compile Include="Views\EditImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EditImageForm.designer.cs">
+      <DependentUpon>EditImageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormAddTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormAddTask.Designer.cs">
+      <DependentUpon>FormAddTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucEditImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucEditImage.designer.cs">
+      <DependentUpon>ucEditImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucNoGroupSubResultPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucNoGroupSubResultPage.Designer.cs">
+      <DependentUpon>ucNoGroupSubResultPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucOutputWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucOutputWindow.Designer.cs">
+      <DependentUpon>ucOutputWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucPlateGroupSubResultPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucPlateGroupSubResultPage.Designer.cs">
+      <DependentUpon>ucPlateGroupSubResultPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucResultImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucResultImage.Designer.cs">
+      <DependentUpon>ucResultImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucResultPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucResultPage.Designer.cs">
+      <DependentUpon>ucResultPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucSearchPara.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchPara.Designer.cs">
+      <DependentUpon>ucSearchPara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucSearchPara_Task.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchSettings.Designer.cs">
+      <DependentUpon>ucSearchSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucSearchSettingsContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchSettingsContainer.Designer.cs">
+      <DependentUpon>ucSearchSettingsContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucSingleGroupResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSingleGroupResult.Designer.cs">
+      <DependentUpon>ucSingleGroupResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucSingleResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSingleResult.Designer.cs">
+      <DependentUpon>ucSingleResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucTaskList2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucTaskList2.Designer.cs">
+      <DependentUpon>ucTaskList2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucTaskPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucTaskPage.Designer.cs">
+      <DependentUpon>ucTaskPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucSearchPara_ResultType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchPara_VehiclePlate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchPara_Brand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchPara_Behavior.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchPara_StartTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchPara_EndTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchPara_Camera.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchPara_VehicleType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchPara_PlateType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucCompareSearchResultPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucCompareSearchResultPage.Designer.cs">
+      <DependentUpon>ucCompareSearchResultPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucCompareSearchSettingsContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucCompareSearchSettingsContainer.Designer.cs">
+      <DependentUpon>ucCompareSearchSettingsContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucSingleResultDetailInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSingleResultDetailInfo.Designer.cs">
+      <DependentUpon>ucSingleResultDetailInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormConfig.Designer.cs">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraMainForm.Designer.cs">
+      <DependentUpon>XtraMainForm.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\task_18.544021024967px_1202886_easyicon.net.png" />
+    <None Include="Resources\task_27.816031537451px_1202886_easyicon.net.png" />
+    <None Include="Resources\Detective_31.305719921105px_1180787_easyicon.net.png" />
+    <None Include="Resources\Administrative_Tools_32px_1180764_easyicon.net.png" />
+    <None Include="Resources\analysis_52.833836858006px_1202839_easyicon.net.png" />
+    <None Include="Resources\target_32px_1202885_easyicon.net.png" />
+    <None Include="Resources\task_37.088042049934px_1202886_easyicon.net.png" />
+    <None Include="Resources\task_22.008075370121px_1147521_easyicon.net.png" />
+    <None Include="Resources\base_cog_32.png" />
+    <None Include="Resources\81559e59-526a-4e13-b18b-4632691d7958.gif" />
+    <None Include="Resources\Crown_18.468571428571px_1194754_easyicon.net.png" />
+    <None Include="Resources\Crown_27.702857142857px_1194754_easyicon.net.png" />
+    <None Include="Resources\EditInformationHS.png" />
+    <None Include="Resources\ZoomHS.png" />
+    <None Include="..\data\ImageAnalyseDB_V3.s3db">
+      <Link>ImageAnalyseDB_V3.s3db</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\检索-以图搜图1111.jpg" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\EditImageForm.resx">
+      <DependentUpon>EditImageForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormAddTask.resx">
+      <DependentUpon>FormAddTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucEditImage.resx">
+      <DependentUpon>ucEditImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucNoGroupSubResultPage.resx">
+      <DependentUpon>ucNoGroupSubResultPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucOutputWindow.resx">
+      <DependentUpon>ucOutputWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucPlateGroupSubResultPage.resx">
+      <DependentUpon>ucPlateGroupSubResultPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucResultImage.resx">
+      <DependentUpon>ucResultImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucResultPage.resx">
+      <DependentUpon>ucResultPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara.resx">
+      <DependentUpon>ucSearchPara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara_PlateColor.resx">
+      <DependentUpon>ucSearchPara_PlateColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara_ResultType.resx">
+      <DependentUpon>ucSearchPara_ResultType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara_Task.resx">
+      <DependentUpon>ucSearchPara_Task.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara_VehicleColor.resx">
+      <DependentUpon>ucSearchPara_VehicleColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara_VehicleDetailType.resx">
+      <DependentUpon>ucSearchPara_VehicleDetailType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchSettings.resx">
+      <DependentUpon>ucSearchSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchSettingsContainer.resx">
+      <DependentUpon>ucSearchSettingsContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSingleGroupResult.resx">
+      <DependentUpon>ucSingleGroupResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSingleResult.resx">
+      <DependentUpon>ucSingleResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucTaskList2.resx">
+      <DependentUpon>ucTaskList2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucTaskPage.resx">
+      <DependentUpon>ucTaskPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara_VehiclePlate.resx">
+      <DependentUpon>ucSearchPara_VehiclePlate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara_Brand.resx">
+      <DependentUpon>ucSearchPara_Brand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara_Behavior.resx">
+      <DependentUpon>ucSearchPara_Behavior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara_StartTime.resx">
+      <DependentUpon>ucSearchPara_StartTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara_EndTime.resx">
+      <DependentUpon>ucSearchPara_EndTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara_Camera.resx">
+      <DependentUpon>ucSearchPara_Camera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara_VehicleType.resx">
+      <DependentUpon>ucSearchPara_VehicleType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSearchPara_PlateType.resx">
+      <DependentUpon>ucSearchPara_PlateType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucCompareSearchResultPage.resx">
+      <DependentUpon>ucCompareSearchResultPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucCompareSearchSettingsContainer.resx">
+      <DependentUpon>ucCompareSearchSettingsContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucSingleResultDetailInfo.resx">
+      <DependentUpon>ucSingleResultDetailInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormConfig.resx">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraMainForm.resx">
+      <DependentUpon>XtraMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="..\libs\MyLog4Net.config">
+      <Link>MyLog4Net.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Views\ucSearchPara_VehicleDetailType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchPara_PlateColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucSearchPara_VehicleColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\com.VehicleAnalyse.DataModel\com.VehicleAnalyse.DataModel.csproj">
+      <Project>{2DDCE45D-9796-4F02-A1C3-917DA0E0660F}</Project>
+      <Name>com.VehicleAnalyse.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.VehicleAnalyse.Service\com.VehicleAnalyse.Service.csproj">
+      <Project>{31120AE6-C9CB-45A9-A2A3-9DAD803B2D9F}</Project>
+      <Name>com.VehicleAnalyse.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VehicleHelper\VehicleHelper.csproj">
+      <Project>{9B78C170-C550-4043-B009-FA7856A73B9A}</Project>
+      <Name>VehicleHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppUtil\AppUtil.csproj">
+      <Project>{94DC7060-2442-4E4F-A951-CE649564FCC6}</Project>
+      <Name>AppUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="regsqlite.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\bocom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1565_questionmarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\libs\msvcp100d.dll">
+      <Link>msvcp100d.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\libs\msvcr100d.dll">
+      <Link>msvcr100d.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="car_32px_1180294_easyicon.net.ico" />
+    <Content Include="gacutil.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\排序4.png" />
+    <None Include="Resources\排序3.png" />
+    <None Include="Resources\排序2.png" />
+    <None Include="Resources\排序1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

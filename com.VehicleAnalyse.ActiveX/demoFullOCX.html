@@ -1,0 +1,88 @@
+<!-- <%@ page language="java" import="java.util.*" pageEncoding="GBK"%> -->
+<html>
+<head>
+    <title>SDK_DEMO_FULL</title>
+        <style type="text/css">
+        #MyDiv {
+            height: 300px;
+            width: 1000px;
+        }
+    </style>
+
+</head>
+<script>
+    //   =============基础操作==================
+
+    function IRASInitialization() {
+        val = iVXSDK.IRASInitialization();
+        MyDiv.innerText = 'IRASInitialization:' + val;
+    }
+    function IRASUninitialization() {
+        val = iVXSDK.IRASUninitialization();
+        MyDiv.innerText = 'IRASUninitialization:' + val;
+    }
+    window.onload = function () {
+        alert("IRASInitialization");
+        IRASInitialization();
+    }
+
+    window.onunload = function () {
+        alert("IRASUninitialization");
+        IRASUninitialization();
+    }
+</script>
+
+<body>
+    <table cellspacing=0 cellpadding=0 width="100%" align=center border=1>
+        <tr><td colspan="2"><h1 align=center>IRAS OCX测试页面 </h1></td></tr>
+        <tr>
+            <td colspan="2" width="100%">
+                <table cellspacing=1 cellpadding=0 bgcolor=#000000 border=0 width="100%">
+                    <tr>
+                        <th bgcolor=#ebebeb>
+                            基础操作
+                        </th>
+                    </tr>
+                    <tr bgcolor=#ffffff>
+                        <td>
+                            <input id="IRASInitialization" type="button" onclick="IRASInitialization()" value="IRAS初始化" />
+                            <input id="IRASUninitialization" type="button" onclick="IRASUninitialization()" value="IRAS反初始化" />
+                            <br>
+                        </td>
+
+                    </tr>
+                </table>
+                <br>
+            </td>
+        </tr>
+        <tr>
+
+            <td valign="top">
+                <table>
+                    <tr>
+                        <td>
+                            <object id="iVXSDK" classid="clsid:094500B1-62FC-46B6-BA44-7634CD712A00" width="1300"
+                                    height="700">
+                                IRAS控件未加载
+                            </object>
+                        </td>
+                    </tr>
+                                        <tr>
+                        <td>
+                            <div id=''>
+                                <textarea id="MyDiv"
+                                          name="S1">
+                                    info
+                                </textarea>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

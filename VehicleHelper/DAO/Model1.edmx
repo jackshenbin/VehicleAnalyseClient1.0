@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ImageAnalyseDBModel.Store" Alias="Self" Provider="System.Data.SQLite" ProviderManifestToken="ISO8601" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ImageAnalyseDBModelStoreContainer">
+          <EntitySet Name="PhoneCalling" EntityType="ImageAnalyseDBModel.Store.PhoneCalling" store:Type="Tables" store:Name="PhoneCalling">
+            <DefiningQuery>SELECT 
+      [PhoneCalling].[Id] AS [Id], 
+      [PhoneCalling].[Name] AS [Name]
+      FROM [PhoneCalling] AS [PhoneCalling]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="PlateColor" EntityType="ImageAnalyseDBModel.Store.PlateColor" store:Type="Tables" />
+          <EntitySet Name="PlateStructure" EntityType="ImageAnalyseDBModel.Store.PlateStructure" store:Type="Tables" />
+          <EntitySet Name="SafeBeltWear" EntityType="ImageAnalyseDBModel.Store.SafeBeltWear" store:Type="Tables" store:Name="SafeBeltWear">
+            <DefiningQuery>SELECT 
+      [SafeBeltWear].[Id] AS [Id], 
+      [SafeBeltWear].[Name] AS [Name]
+      FROM [SafeBeltWear] AS [SafeBeltWear]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="SunlightShielding" EntityType="ImageAnalyseDBModel.Store.SunlightShielding" store:Type="Tables" store:Name="SunlightShielding">
+            <DefiningQuery>SELECT 
+      [SunlightShielding].[Id] AS [Id], 
+      [SunlightShielding].[Name] AS [Name]
+      FROM [SunlightShielding] AS [SunlightShielding]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="VehicleBrand" EntityType="ImageAnalyseDBModel.Store.VehicleBrand" store:Type="Tables" store:Name="VehicleBrand">
+            <DefiningQuery>SELECT 
+      [VehicleBrand].[Id] AS [Id], 
+      [VehicleBrand].[ParentId] AS [ParentId], 
+      [VehicleBrand].[Name] AS [Name], 
+      [VehicleBrand].[Logo] AS [Logo], 
+      [VehicleBrand].[Front] AS [Front], 
+      [VehicleBrand].[Back] AS [Back]
+      FROM [VehicleBrand] AS [VehicleBrand]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="VehicleColor" EntityType="ImageAnalyseDBModel.Store.VehicleColor" store:Type="Tables" />
+          <EntitySet Name="VehicleDetailType" EntityType="ImageAnalyseDBModel.Store.VehicleDetailType" store:Type="Tables" />
+          <EntitySet Name="VehicleType" EntityType="ImageAnalyseDBModel.Store.VehicleType" store:Type="Tables" />
+        </EntityContainer>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“main.PhoneCalling”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="PhoneCalling">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PlateColor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PlateStructure">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“main.SafeBeltWear”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="SafeBeltWear">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“main.SunlightShielding”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="SunlightShielding">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“main.VehicleBrand”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="VehicleBrand">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" />
+          <Property Name="ParentId" Type="integer" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Logo" Type="blob" />
+          <Property Name="Front" Type="blob" />
+          <Property Name="Back" Type="blob" />
+        </EntityType>
+        <EntityType Name="VehicleColor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="VehicleDetailType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ParentId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VehicleType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ImageAnalyseDBModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ImageAnalyseDBEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="PhoneCallings" EntityType="ImageAnalyseDBModel.PhoneCalling" a:GetterAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <EntitySet Name="PlateColors" EntityType="ImageAnalyseDBModel.PlateColor" a:GetterAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <EntitySet Name="PlateStructures" EntityType="ImageAnalyseDBModel.PlateStructure" a:GetterAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <EntitySet Name="SafeBeltWears" EntityType="ImageAnalyseDBModel.SafeBeltWear" a:GetterAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <EntitySet Name="SunlightShieldings" EntityType="ImageAnalyseDBModel.SunlightShielding" a:GetterAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <EntitySet Name="VehicleBrands" EntityType="ImageAnalyseDBModel.VehicleBrand" a:GetterAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <EntitySet Name="VehicleColors" EntityType="ImageAnalyseDBModel.VehicleColor" a:GetterAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <EntitySet Name="VehicleDetailTypes" EntityType="ImageAnalyseDBModel.VehicleDetailType" a:GetterAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <EntitySet Name="VehicleTypes" EntityType="ImageAnalyseDBModel.VehicleType" a:GetterAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+        </EntityContainer>
+        <EntityType Name="PhoneCalling" a:TypeAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PlateColor" a:TypeAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PlateStructure" a:TypeAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SafeBeltWear" a:TypeAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SunlightShielding" a:TypeAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="VehicleBrand" a:TypeAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Type="Int64" Name="Id" Nullable="false" />
+          <Property Type="Int64" Name="ParentId" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Binary" Name="Logo" MaxLength="2147483647" FixedLength="false" />
+          <Property Type="Binary" Name="Front" MaxLength="2147483647" FixedLength="false" />
+          <Property Type="Binary" Name="Back" MaxLength="2147483647" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="VehicleColor" a:TypeAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="VehicleDetailType" a:TypeAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ParentId" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VehicleType" a:TypeAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ImageAnalyseDBModelStoreContainer" CdmEntityContainer="ImageAnalyseDBEntities">
+          <EntitySetMapping Name="PhoneCallings">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.PhoneCalling">
+              <MappingFragment StoreEntitySet="PhoneCalling">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PlateColors">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.PlateColor">
+              <MappingFragment StoreEntitySet="PlateColor">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PlateStructures">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.PlateStructure">
+              <MappingFragment StoreEntitySet="PlateStructure">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SafeBeltWears">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.SafeBeltWear">
+              <MappingFragment StoreEntitySet="SafeBeltWear">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SunlightShieldings">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.SunlightShielding">
+              <MappingFragment StoreEntitySet="SunlightShielding">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VehicleBrands">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.VehicleBrand">
+              <MappingFragment StoreEntitySet="VehicleBrand">
+                <ScalarProperty Name="Back" ColumnName="Back" />
+                <ScalarProperty Name="Front" ColumnName="Front" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VehicleColors">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.VehicleColor">
+              <MappingFragment StoreEntitySet="VehicleColor">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VehicleDetailTypes">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.VehicleDetailType">
+              <MappingFragment StoreEntitySet="VehicleDetailType">
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VehicleTypes">
+            <EntityTypeMapping TypeName="ImageAnalyseDBModel.VehicleType">
+              <MappingFragment StoreEntitySet="VehicleType">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.PhoneCalling" Width="1.5" PointX="0.75" PointY="0.75" Height="1.3969734700520817" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.PlateColor" Width="1.5" PointX="2.75" PointY="0.75" Height="1.3969734700520853" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.PlateStructure" Width="1.5" PointX="0.75" PointY="3.75" Height="1.3969734700520888" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.SafeBeltWear" Width="1.5" PointX="2.75" PointY="3.75" Height="1.3969734700520888" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.SunlightShielding" Width="1.5" PointX="4.75" PointY="0.75" Height="1.3969734700520888" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.VehicleBrand" Width="1.5" PointX="4.75" PointY="3.75" Height="2.1610522460937531" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.VehicleColor" Width="1.5" PointX="6.75" PointY="0.75" Height="1.3969734700520888" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.VehicleDetailType" Width="1.5" PointX="0.75" PointY="6.75" Height="1.5879931640625031" />
+        <EntityTypeShape EntityType="ImageAnalyseDBModel.VehicleType" Width="1.5" PointX="2.75" PointY="6.75" Height="1.3969734700520888" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

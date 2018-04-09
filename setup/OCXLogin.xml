@@ -1,0 +1,9 @@
+<ServerList>
+	<Login>
+		<IP>127.0.0.1</IP>
+		<Port>8002</Port>
+		<LocalPort>4096</LocalPort>
+		<User>root</User>
+		<Pass>123456</Pass>
+	</Login>
+</ServerList>

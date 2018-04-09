@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94DC7060-2442-4E4F-A951-CE649564FCC6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppUtil</RootNamespace>
+    <AssemblyName>AppUtil</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\setup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChnCharInfo">
+      <HintPath>..\libs\ChnCharInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=11.0.0.4, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.4, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.Data.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.Utils.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\libs\DevExpress.XtraEditors.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>..\libs\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="MyLog4Net">
+      <HintPath>..\libs\MyLog4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheManager.cs" />
+    <Compile Include="Common\PinYinConverter.cs" />
+    <Compile Include="Common\PinYinConverterHelp.cs" />
+    <Compile Include="Common\UrlEncodeUtil.cs" />
+    <Compile Include="Common\XMLSerilize.cs" />
+    <Compile Include="Common\Constant.cs" />
+    <Compile Include="Common\Encryption.cs" />
+    <Compile Include="Common\FTP.cs" />
+    <Compile Include="Common\TaskItem.cs" />
+    <Compile Include="Common\TaskRunner.cs" />
+    <Compile Include="Common\TextUtil.cs" />
+    <Compile Include="Common\Utils.cs" />
+    <Compile Include="Controls\CheckPicture.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckPicture.Designer.cs">
+      <DependentUpon>CheckPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ColorComboBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorComboBoxEx.designer.cs">
+      <DependentUpon>ColorComboBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IProgressForm.cs" />
+    <Compile Include="Controls\ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressForm.designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProgressFormModern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressFormModern.Designer.cs">
+      <DependentUpon>ProgressFormModern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProgressFormStandalone.cs" />
+    <Compile Include="Controls\ucPictureBoxRegion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPictureBoxRegion.Designer.cs">
+      <DependentUpon>ucPictureBoxRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucProgressBG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucProgressBG.Designer.cs">
+      <DependentUpon>ucProgressBG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucProgressFG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucProgressFG.Designer.cs">
+      <DependentUpon>ucProgressFG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucPictureBoxShowRegion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPictureBoxShowRegion.Designer.cs">
+      <DependentUpon>ucPictureBoxShowRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICacheItem.cs" />
+    <Compile Include="IEventAggregatorSubscriber.cs" />
+    <Compile Include="IInteractionService.cs" />
+    <Compile Include="LoginToken.cs" />
+    <Compile Include="NotifyPropertyChangedModel.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SDKCallException.cs" />
+    <Compile Include="ViewModelBase.cs" />
+    <Compile Include="VVMDataBindings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ColorComboBoxEx.resx">
+      <DependentUpon>ColorComboBoxEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProgressFormModern.resx">
+      <DependentUpon>ProgressFormModern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucPictureBoxRegion.resx">
+      <DependentUpon>ucPictureBoxRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucProgressBG.resx">
+      <DependentUpon>ucProgressBG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucProgressFG.resx">
+      <DependentUpon>ucProgressFG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucPictureBoxShowRegion.resx">
+      <DependentUpon>ucPictureBoxShowRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\a.PNG" />
+    <Content Include="Resources\lightbox-btn-close.png" />
+    <Content Include="Resources\loadingbar_bg_left.png" />
+    <Content Include="Resources\loadingbar_bg_mid.png" />
+    <Content Include="Resources\loadingbar_bg_right.png" />
+    <Content Include="Resources\loadingbar_fg_left.png" />
+    <Content Include="Resources\loadingbar_fg_left1.png" />
+    <Content Include="Resources\loadingbar_fg_mid.png" />
+    <Content Include="Resources\loadingbar_fg_right.png" />
+    <Content Include="Resources\loading_bg_left.png" />
+    <Content Include="Resources\loading_bg_mid.png" />
+    <Content Include="Resources\loading_bg_right.png" />
+    <Content Include="Resources\ProgressBar.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

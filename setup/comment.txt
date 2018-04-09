@@ -1,0 +1,7 @@
+;下面的注释包含自解压脚本命令
+
+Path=BOCOM\IRAS
+SavePath
+Setup=regcom.bat
+SetupCode
+Overwrite=1
