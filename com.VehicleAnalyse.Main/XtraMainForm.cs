@@ -45,8 +45,6 @@ namespace com.VehicleAnalyse.Main
                 this.ucCompareSearchResultPage1 = new com.VehicleAnalyse.Main.Views.ucCompareSearchResultPage();
                 // ucTaskPage1
                 // 
-                this.ucTaskPage1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-                this.ucTaskPage1.Appearance.Options.UseBackColor = true;
                 this.ucTaskPage1.Dock = System.Windows.Forms.DockStyle.Fill;
                 this.ucTaskPage1.Location = new System.Drawing.Point(0, 0);
                 this.ucTaskPage1.Name = "ucTaskPage1";
@@ -55,8 +53,6 @@ namespace com.VehicleAnalyse.Main
                 // 
                 // ucResultPage1
                 // 
-                this.ucResultPage1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-                this.ucResultPage1.Appearance.Options.UseBackColor = true;
                 this.ucResultPage1.Dock = System.Windows.Forms.DockStyle.Fill;
                 this.ucResultPage1.Location = new System.Drawing.Point(0, 0);
                 this.ucResultPage1.Name = "ucResultPage1";
@@ -65,8 +61,6 @@ namespace com.VehicleAnalyse.Main
                 // 
                 // ucCompareSearchResultPage1
                 // 
-                this.ucCompareSearchResultPage1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-                this.ucCompareSearchResultPage1.Appearance.Options.UseBackColor = true;
                 this.ucCompareSearchResultPage1.Dock = System.Windows.Forms.DockStyle.Fill;
                 this.ucCompareSearchResultPage1.Location = new System.Drawing.Point(0, 0);
                 this.ucCompareSearchResultPage1.Name = "ucCompareSearchResultPage1";
@@ -121,18 +115,28 @@ namespace com.VehicleAnalyse.Main
 
         private void simpleButtonConfig_Click(object sender, EventArgs e)
         {
-            com.VehicleAnalyse.Main.Views.FormConfig f = new com.VehicleAnalyse.Main.Views.FormConfig();
-            f.ShowDialog();
         }
 
-        private void bubbleButton1_Click(object sender, DevComponents.DotNetBar.ClickEventArgs e)
+
+        private void checkButtonTask_CheckedChanged(object sender, EventArgs e)
         {
             xtraTabControl1.SelectedTabPageIndex = 0;
         }
 
-        private void bubbleButton2_Click(object sender, DevComponents.DotNetBar.ClickEventArgs e)
+        private void checkButtonSearch_CheckedChanged(object sender, EventArgs e)
         {
             xtraTabControl1.SelectedTabPageIndex = 1;
+        }
+
+        private void checkButtonCompare_CheckedChanged(object sender, EventArgs e)
+        {
+            xtraTabControl1.SelectedTabPageIndex =2;
+        }
+
+        private void simpleButtonconfig_Click_1(object sender, EventArgs e)
+        {
+            com.VehicleAnalyse.Main.Views.FormConfig f = new com.VehicleAnalyse.Main.Views.FormConfig();
+            f.ShowDialog();
 
         }
     }

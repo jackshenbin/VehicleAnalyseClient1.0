@@ -133,12 +133,7 @@ namespace com.VehicleAnalyse.Main.Views
             this.txtBoxZoomRate.Enabled = false;
             this.txtBoxZoomRate.Location = new System.Drawing.Point(538, 6);
             this.txtBoxZoomRate.Name = "txtBoxZoomRate";
-            this.txtBoxZoomRate.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.txtBoxZoomRate.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.txtBoxZoomRate.Properties.Appearance.Options.UseBackColor = true;
-            this.txtBoxZoomRate.Properties.Appearance.Options.UseForeColor = true;
             this.txtBoxZoomRate.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.txtBoxZoomRate.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.txtBoxZoomRate.Size = new System.Drawing.Size(37, 20);
             this.txtBoxZoomRate.TabIndex = 3;
             // 
@@ -316,12 +311,11 @@ namespace com.VehicleAnalyse.Main.Views
             // 
             // ucEditImageCtrl
             // 
-            this.ucEditImageCtrl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucEditImageCtrl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.ucEditImageCtrl.Location = new System.Drawing.Point(0, 31);
             this.ucEditImageCtrl.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.ucEditImageCtrl.LookAndFeel.UseDefaultLookAndFeel = false;
             this.ucEditImageCtrl.Name = "ucEditImageCtrl";
             this.ucEditImageCtrl.Size = new System.Drawing.Size(735, 394);
             this.ucEditImageCtrl.TabIndex = 21;

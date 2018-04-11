@@ -113,7 +113,7 @@
             // 
             // ucTaskPage
             // 
-            this.Appearance.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

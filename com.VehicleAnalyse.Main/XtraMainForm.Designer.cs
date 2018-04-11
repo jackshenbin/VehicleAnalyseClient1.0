@@ -44,12 +44,10 @@
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.simpleButtonConfig = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.checkButton1 = new DevExpress.XtraEditors.CheckButton();
-            this.checkButton2 = new DevExpress.XtraEditors.CheckButton();
+            this.checkButtonTask = new DevExpress.XtraEditors.CheckButton();
+            this.checkButtonCompare = new DevExpress.XtraEditors.CheckButton();
+            this.checkButtonSearch = new DevExpress.XtraEditors.CheckButton();
+            this.simpleButtonconfig = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
@@ -96,14 +94,14 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(830, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(823, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 682);
-            this.barDockControlBottom.Size = new System.Drawing.Size(830, 27);
+            this.barDockControlBottom.Size = new System.Drawing.Size(823, 27);
             // 
             // barDockControlLeft
             // 
@@ -116,7 +114,7 @@
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(830, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(823, 0);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 682);
             // 
             // barStatusLogin
@@ -139,11 +137,11 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.xtraTabControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.xtraTabControl1.Location = new System.Drawing.Point(1, 41);
+            this.xtraTabControl1.Location = new System.Drawing.Point(1, 47);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
             this.xtraTabControl1.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
-            this.xtraTabControl1.Size = new System.Drawing.Size(828, 644);
+            this.xtraTabControl1.Size = new System.Drawing.Size(821, 638);
             this.xtraTabControl1.TabIndex = 6;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -154,26 +152,26 @@
             // xtraTabPage1
             // 
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(820, 636);
+            this.xtraTabPage1.Size = new System.Drawing.Size(813, 630);
             this.xtraTabPage1.Text = "xtraTabPage1";
             // 
             // xtraTabPage2
             // 
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(820, 636);
+            this.xtraTabPage2.Size = new System.Drawing.Size(813, 630);
             this.xtraTabPage2.Text = "xtraTabPage2";
             // 
             // xtraTabPage3
             // 
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(820, 636);
+            this.xtraTabPage3.Size = new System.Drawing.Size(813, 630);
             this.xtraTabPage3.Text = "xtraTabPage3";
             // 
             // pictureEdit1
             // 
             this.pictureEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureEdit1.EditValue = global::com.VehicleAnalyse.Main.Properties.Resources.bocom;
-            this.pictureEdit1.Location = new System.Drawing.Point(746, 0);
+            this.pictureEdit1.Location = new System.Drawing.Point(739, 0);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.AllowFocused = false;
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -184,79 +182,70 @@
             this.pictureEdit1.Size = new System.Drawing.Size(83, 38);
             this.pictureEdit1.TabIndex = 29;
             // 
-            // simpleButtonConfig
+            // checkButtonTask
             // 
-            this.simpleButtonConfig.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.simpleButtonConfig.Image = global::com.VehicleAnalyse.Main.Properties.Resources.Administrative_Tools_32px_1180764_easyicon_net;
-            this.simpleButtonConfig.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButtonConfig.Location = new System.Drawing.Point(300, 1);
-            this.simpleButtonConfig.Name = "simpleButtonConfig";
-            this.simpleButtonConfig.Size = new System.Drawing.Size(40, 40);
-            this.simpleButtonConfig.TabIndex = 34;
-            this.simpleButtonConfig.Click += new System.EventHandler(this.simpleButtonConfig_Click);
+            this.checkButtonTask.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.checkButtonTask.Checked = true;
+            this.checkButtonTask.GroupIndex = 1;
+            this.checkButtonTask.Image = global::com.VehicleAnalyse.Main.Properties.Resources.task_37_088042049934px_1202886_easyicon_net;
+            this.checkButtonTask.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.checkButtonTask.Location = new System.Drawing.Point(305, 2);
+            this.checkButtonTask.LookAndFeel.SkinName = "McSkin";
+            this.checkButtonTask.Name = "checkButtonTask";
+            this.checkButtonTask.Size = new System.Drawing.Size(45, 45);
+            this.checkButtonTask.TabIndex = 49;
+            this.checkButtonTask.CheckedChanged += new System.EventHandler(this.checkButtonTask_CheckedChanged);
             // 
-            // simpleButton1
+            // checkButtonCompare
             // 
-            this.simpleButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.simpleButton1.Image = global::com.VehicleAnalyse.Main.Properties.Resources.task_37_088042049934px_1202886_easyicon_net;
-            this.simpleButton1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(174, 1);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(40, 40);
-            this.simpleButton1.TabIndex = 44;
+            this.checkButtonCompare.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.checkButtonCompare.GroupIndex = 1;
+            this.checkButtonCompare.Image = global::com.VehicleAnalyse.Main.Properties.Resources.Detective_31_305719921105px_1180787_easyicon_net;
+            this.checkButtonCompare.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.checkButtonCompare.Location = new System.Drawing.Point(407, 1);
+            this.checkButtonCompare.LookAndFeel.SkinName = "McSkin";
+            this.checkButtonCompare.Name = "checkButtonCompare";
+            this.checkButtonCompare.Size = new System.Drawing.Size(45, 45);
+            this.checkButtonCompare.TabIndex = 54;
+            this.checkButtonCompare.TabStop = false;
+            this.checkButtonCompare.CheckedChanged += new System.EventHandler(this.checkButtonCompare_CheckedChanged);
             // 
-            // simpleButton2
+            // checkButtonSearch
             // 
-            this.simpleButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.simpleButton2.Image = global::com.VehicleAnalyse.Main.Properties.Resources.target_32px_1202885_easyicon_net;
-            this.simpleButton2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(216, 1);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(40, 40);
-            this.simpleButton2.TabIndex = 44;
+            this.checkButtonSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.checkButtonSearch.GroupIndex = 1;
+            this.checkButtonSearch.Image = global::com.VehicleAnalyse.Main.Properties.Resources.target_32px_1202885_easyicon_net;
+            this.checkButtonSearch.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.checkButtonSearch.Location = new System.Drawing.Point(356, 1);
+            this.checkButtonSearch.LookAndFeel.SkinName = "McSkin";
+            this.checkButtonSearch.Name = "checkButtonSearch";
+            this.checkButtonSearch.Size = new System.Drawing.Size(45, 45);
+            this.checkButtonSearch.TabIndex = 55;
+            this.checkButtonSearch.TabStop = false;
+            this.checkButtonSearch.CheckedChanged += new System.EventHandler(this.checkButtonSearch_CheckedChanged);
             // 
-            // simpleButton3
+            // simpleButtonconfig
             // 
-            this.simpleButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.simpleButton3.Image = global::com.VehicleAnalyse.Main.Properties.Resources.Detective_31_305719921105px_1180787_easyicon_net;
-            this.simpleButton3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton3.Location = new System.Drawing.Point(258, 1);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(40, 40);
-            this.simpleButton3.TabIndex = 44;
-            // 
-            // checkButton1
-            // 
-            this.checkButton1.Checked = true;
-            this.checkButton1.GroupIndex = 1;
-            this.checkButton1.Image = global::com.VehicleAnalyse.Main.Properties.Resources.task_27_816031537451px_1202886_easyicon_net;
-            this.checkButton1.Location = new System.Drawing.Point(380, 6);
-            this.checkButton1.Name = "checkButton1";
-            this.checkButton1.Size = new System.Drawing.Size(100, 28);
-            this.checkButton1.TabIndex = 49;
-            this.checkButton1.Text = "任务管理";
-            // 
-            // checkButton2
-            // 
-            this.checkButton2.GroupIndex = 1;
-            this.checkButton2.Location = new System.Drawing.Point(486, 6);
-            this.checkButton2.Name = "checkButton2";
-            this.checkButton2.Size = new System.Drawing.Size(97, 28);
-            this.checkButton2.TabIndex = 49;
-            this.checkButton2.TabStop = false;
-            this.checkButton2.Text = "checkButton1";
+            this.simpleButtonconfig.AllowFocus = false;
+            this.simpleButtonconfig.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.simpleButtonconfig.Image = global::com.VehicleAnalyse.Main.Properties.Resources.Administrative_Tools_32px_1180764_easyicon_net;
+            this.simpleButtonconfig.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.simpleButtonconfig.Location = new System.Drawing.Point(458, 0);
+            this.simpleButtonconfig.Name = "simpleButtonconfig";
+            this.simpleButtonconfig.Size = new System.Drawing.Size(45, 45);
+            this.simpleButtonconfig.TabIndex = 61;
+            this.simpleButtonconfig.TabStop = false;
+            this.simpleButtonconfig.Click += new System.EventHandler(this.simpleButtonconfig_Click_1);
             // 
             // XtraMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(830, 709);
-            this.Controls.Add(this.checkButton2);
-            this.Controls.Add(this.checkButton1);
-            this.Controls.Add(this.simpleButton3);
-            this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.simpleButton1);
-            this.Controls.Add(this.simpleButtonConfig);
+            this.ClientSize = new System.Drawing.Size(823, 709);
+            this.Controls.Add(this.simpleButtonconfig);
+            this.Controls.Add(this.checkButtonSearch);
+            this.Controls.Add(this.checkButtonCompare);
+            this.Controls.Add(this.checkButtonTask);
             this.Controls.Add(this.pictureEdit1);
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.barDockControlLeft);
@@ -265,9 +254,9 @@
             this.Controls.Add(this.barDockControlTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.LookAndFeel.SkinName = "McSkin";
-            this.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.LookAndFeel.UseDefaultLookAndFeel = true;
             this.Name = "XtraMainForm";
-            this.Text = "博康慧眼—车侦系统客户端";
+            this.Text = "车辆识别客户端";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.XtraMainForm_FormClosing);
             this.Load += new System.EventHandler(this.XtraMainForm_Load);
@@ -298,12 +287,10 @@
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
-        private DevExpress.XtraEditors.SimpleButton simpleButtonConfig;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.CheckButton checkButton2;
-        private DevExpress.XtraEditors.CheckButton checkButton1;
+        private DevExpress.XtraEditors.CheckButton checkButtonTask;
+        private DevExpress.XtraEditors.CheckButton checkButtonSearch;
+        private DevExpress.XtraEditors.CheckButton checkButtonCompare;
+        private DevExpress.XtraEditors.SimpleButton simpleButtonconfig;
 
     }
 }

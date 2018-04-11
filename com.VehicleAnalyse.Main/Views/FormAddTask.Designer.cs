@@ -77,7 +77,6 @@ namespace com.VehicleAnalyse.Main.Views
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Name")});
             this.lookUpEdit1.Properties.DisplayMember = "Name";
             this.lookUpEdit1.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.lookUpEdit1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.lookUpEdit1.Properties.PopupFormMinSize = new System.Drawing.Size(190, 20);
             this.lookUpEdit1.Properties.PopupSizeable = false;
             this.lookUpEdit1.Properties.ShowFooter = false;
@@ -178,14 +177,9 @@ namespace com.VehicleAnalyse.Main.Views
             this.tableLayoutPanel1.SetColumnSpan(this.comboBoxEditCamera, 3);
             this.comboBoxEditCamera.Location = new System.Drawing.Point(83, 110);
             this.comboBoxEditCamera.Name = "comboBoxEditCamera";
-            this.comboBoxEditCamera.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.comboBoxEditCamera.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.comboBoxEditCamera.Properties.Appearance.Options.UseBackColor = true;
-            this.comboBoxEditCamera.Properties.Appearance.Options.UseForeColor = true;
             this.comboBoxEditCamera.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditCamera.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.comboBoxEditCamera.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxEditCamera.Size = new System.Drawing.Size(287, 20);
             this.comboBoxEditCamera.TabIndex = 4;
             // 
@@ -217,12 +211,7 @@ namespace com.VehicleAnalyse.Main.Views
             this.txtBoxName.EditValue = "";
             this.txtBoxName.Location = new System.Drawing.Point(83, 3);
             this.txtBoxName.Name = "txtBoxName";
-            this.txtBoxName.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.txtBoxName.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.txtBoxName.Properties.Appearance.Options.UseBackColor = true;
-            this.txtBoxName.Properties.Appearance.Options.UseForeColor = true;
             this.txtBoxName.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.txtBoxName.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.txtBoxName.Properties.MaxLength = 31;
             this.txtBoxName.Size = new System.Drawing.Size(287, 20);
             this.txtBoxName.TabIndex = 0;
@@ -232,10 +221,6 @@ namespace com.VehicleAnalyse.Main.Views
             this.cmbBoxTaskType.EditValue = "本地";
             this.cmbBoxTaskType.Location = new System.Drawing.Point(83, 29);
             this.cmbBoxTaskType.Name = "cmbBoxTaskType";
-            this.cmbBoxTaskType.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.cmbBoxTaskType.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.cmbBoxTaskType.Properties.Appearance.Options.UseBackColor = true;
-            this.cmbBoxTaskType.Properties.Appearance.Options.UseForeColor = true;
             this.cmbBoxTaskType.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.cmbBoxTaskType.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.cmbBoxTaskType.Properties.AppearanceDropDown.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
@@ -251,7 +236,6 @@ namespace com.VehicleAnalyse.Main.Views
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", 90, "Name3")});
             this.cmbBoxTaskType.Properties.DropDownRows = 3;
             this.cmbBoxTaskType.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.cmbBoxTaskType.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.cmbBoxTaskType.Properties.PopupFormMinSize = new System.Drawing.Size(90, 20);
             this.cmbBoxTaskType.Properties.PopupSizeable = false;
             this.cmbBoxTaskType.Properties.ShowFooter = false;
@@ -294,14 +278,9 @@ namespace com.VehicleAnalyse.Main.Views
             this.tableLayoutPanel1.SetColumnSpan(this.comboBoxEditFilePath, 3);
             this.comboBoxEditFilePath.Location = new System.Drawing.Point(83, 55);
             this.comboBoxEditFilePath.Name = "comboBoxEditFilePath";
-            this.comboBoxEditFilePath.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.comboBoxEditFilePath.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.comboBoxEditFilePath.Properties.Appearance.Options.UseBackColor = true;
-            this.comboBoxEditFilePath.Properties.Appearance.Options.UseForeColor = true;
             this.comboBoxEditFilePath.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditFilePath.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.comboBoxEditFilePath.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxEditFilePath.Size = new System.Drawing.Size(287, 20);
             this.comboBoxEditFilePath.TabIndex = 2;
             // 

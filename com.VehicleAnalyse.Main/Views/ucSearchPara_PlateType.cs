@@ -30,11 +30,7 @@ namespace com.VehicleAnalyse.Main.Views
             this.cmbBoxVehicleDetailType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbBoxVehicleDetailType.Location = new System.Drawing.Point(56, 3);
             this.cmbBoxVehicleDetailType.Name = "cmbBoxVehicleDetailType";
-            this.cmbBoxVehicleDetailType.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cmbBoxVehicleDetailType.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbBoxVehicleDetailType.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.cmbBoxVehicleDetailType.Properties.Appearance.Options.UseBackColor = true;
-            this.cmbBoxVehicleDetailType.Properties.Appearance.Options.UseForeColor = true;
             this.cmbBoxVehicleDetailType.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cmbBoxVehicleDetailType.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cmbBoxVehicleDetailType.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
@@ -47,14 +43,12 @@ namespace com.VehicleAnalyse.Main.Views
             this.cmbBoxVehicleDetailType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbBoxVehicleDetailType.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.cmbBoxVehicleDetailType.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.cmbBoxVehicleDetailType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbBoxVehicleDetailType.Size = new System.Drawing.Size(140, 20);
             this.cmbBoxVehicleDetailType.TabIndex = 107;
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.labelControl4.Location = new System.Drawing.Point(2, 7);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(48, 14);

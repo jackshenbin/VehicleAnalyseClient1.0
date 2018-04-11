@@ -26,7 +26,6 @@ namespace com.VehicleAnalyse.Main.Views
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.labelControl3.Location = new System.Drawing.Point(2, 6);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(24, 14);
@@ -38,11 +37,7 @@ namespace com.VehicleAnalyse.Main.Views
             this.cmbBoxEditResultType.EditValue = "不限";
             this.cmbBoxEditResultType.Location = new System.Drawing.Point(55, 3);
             this.cmbBoxEditResultType.Name = "cmbBoxEditResultType";
-            this.cmbBoxEditResultType.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cmbBoxEditResultType.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbBoxEditResultType.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.cmbBoxEditResultType.Properties.Appearance.Options.UseBackColor = true;
-            this.cmbBoxEditResultType.Properties.Appearance.Options.UseForeColor = true;
             this.cmbBoxEditResultType.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cmbBoxEditResultType.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cmbBoxEditResultType.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
@@ -61,7 +56,6 @@ namespace com.VehicleAnalyse.Main.Views
             "未识别",
             "图片错误"});
             this.cmbBoxEditResultType.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.cmbBoxEditResultType.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.cmbBoxEditResultType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbBoxEditResultType.Size = new System.Drawing.Size(141, 20);
             this.cmbBoxEditResultType.TabIndex = 108;
@@ -72,7 +66,6 @@ namespace com.VehicleAnalyse.Main.Views
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.cmbBoxEditResultType);
             this.Name = "ucSearchPara_ResultType";
-            this.Size = new System.Drawing.Size(196, 26);
             ((System.ComponentModel.ISupportInitialize)(this.cmbBoxEditResultType.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

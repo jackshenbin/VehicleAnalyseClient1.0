@@ -69,7 +69,7 @@
             this.picEditOriginal.Properties.Appearance.Options.UseForeColor = true;
             this.picEditOriginal.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.picEditOriginal.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.picEditOriginal.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.picEditOriginal.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.picEditOriginal.Properties.NullText = "没有图片";
             this.picEditOriginal.Properties.PictureInterpolationMode = System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor;
             this.picEditOriginal.Properties.ShowMenu = false;
@@ -103,7 +103,7 @@
             this.picEditDriver.Properties.Appearance.Options.UseBackColor = true;
             this.picEditDriver.Properties.Appearance.Options.UseForeColor = true;
             this.picEditDriver.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.picEditDriver.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.picEditDriver.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.picEditDriver.Properties.ShowMenu = false;
             this.picEditDriver.Size = new System.Drawing.Size(247, 275);
             this.picEditDriver.TabIndex = 15;
@@ -118,7 +118,7 @@
             this.picEditCoDriver.Properties.Appearance.Options.UseBackColor = true;
             this.picEditCoDriver.Properties.Appearance.Options.UseForeColor = true;
             this.picEditCoDriver.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.picEditCoDriver.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.picEditCoDriver.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.picEditCoDriver.Properties.ShowMenu = false;
             this.picEditCoDriver.Size = new System.Drawing.Size(247, 311);
             this.picEditCoDriver.TabIndex = 15;

@@ -403,9 +403,8 @@
             // 
             // flowLayoutPanel3
             // 
-            this.flowLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.flowLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel3.Controls.Add(this.lblCtrlSettings);
             this.flowLayoutPanel3.Controls.Add(this.labelControl检索范围);
             this.flowLayoutPanel3.Controls.Add(this.labelControl3);
@@ -423,7 +422,6 @@
             this.flowLayoutPanel3.Controls.Add(this.labelControl25);
             this.flowLayoutPanel3.Controls.Add(this.labelControl车型号);
             this.flowLayoutPanel3.Controls.Add(this.lblCtrlModelValue);
-            this.flowLayoutPanel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.flowLayoutPanel3.Location = new System.Drawing.Point(161, 4);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 3, 23, 3);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
@@ -612,7 +610,6 @@
             this.btnShowSettings.Appearance.Options.UseForeColor = true;
             this.btnShowSettings.Location = new System.Drawing.Point(5, 5);
             this.btnShowSettings.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Office2003;
-            this.btnShowSettings.LookAndFeel.UseDefaultLookAndFeel = false;
             this.btnShowSettings.Name = "btnShowSettings";
             this.btnShowSettings.Size = new System.Drawing.Size(86, 28);
             this.btnShowSettings.TabIndex = 3;
@@ -795,7 +792,6 @@
             this.picEditThumb.Properties.Appearance.Options.UseBackColor = true;
             this.picEditThumb.Properties.Appearance.Options.UseForeColor = true;
             this.picEditThumb.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.picEditThumb.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.picEditThumb.Properties.NullText = "没有图片";
             this.picEditThumb.Properties.ShowMenu = false;
             this.picEditThumb.Size = new System.Drawing.Size(318, 142);
@@ -929,8 +925,8 @@
             // 
             // lblCtrlVehicleModel
             // 
-            this.lblCtrlVehicleModel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCtrlVehicleModel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCtrlVehicleModel.AutoEllipsis = true;
             this.lblCtrlVehicleModel.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblCtrlVehicleModel.Location = new System.Drawing.Point(4, 8);
@@ -941,9 +937,9 @@
             // 
             // picEditStandard
             // 
-            this.picEditStandard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picEditStandard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.picEditStandard.Location = new System.Drawing.Point(2, 54);
             this.picEditStandard.Name = "picEditStandard";
             this.picEditStandard.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -951,7 +947,6 @@
             this.picEditStandard.Properties.Appearance.Options.UseBackColor = true;
             this.picEditStandard.Properties.Appearance.Options.UseForeColor = true;
             this.picEditStandard.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.picEditStandard.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.picEditStandard.Properties.NullText = "没有图片";
             this.picEditStandard.Properties.ShowMenu = false;
             this.picEditStandard.Size = new System.Drawing.Size(318, 250);
@@ -2076,8 +2071,6 @@
             // 
             // panelControl2
             // 
-            this.panelControl2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.panelControl2.Appearance.Options.UseBackColor = true;
             this.panelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl2.Controls.Add(this.btnSort);
             this.panelControl2.Controls.Add(this.chkBoxEdit);
@@ -2123,7 +2116,6 @@
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.flowLayoutPanel2.Controls.Add(this.lblCtrlFileName);
             this.flowLayoutPanel2.Controls.Add(this.labelControl9);
             this.flowLayoutPanel2.Controls.Add(this.lblCount);
@@ -2131,7 +2123,6 @@
             this.flowLayoutPanel2.Controls.Add(this.lblCtrlCurrentPageCount);
             this.flowLayoutPanel2.Controls.Add(this.labelControl7);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 3, 23, 3);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -2190,7 +2181,6 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.flowLayoutPanel1.Controls.Add(this.btnNextPage);
             this.flowLayoutPanel1.Controls.Add(this.lblControlPageCount);
             this.flowLayoutPanel1.Controls.Add(this.labelControl11);
@@ -2198,7 +2188,6 @@
             this.flowLayoutPanel1.Controls.Add(this.btnPrePage);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.flowLayoutPanel1.Location = new System.Drawing.Point(654, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -2245,14 +2234,9 @@
             this.comboBoxPage.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.comboBoxPage.Name = "comboBoxPage";
             this.comboBoxPage.Properties.AllowMouseWheel = false;
-            this.comboBoxPage.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.comboBoxPage.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.comboBoxPage.Properties.Appearance.Options.UseBackColor = true;
-            this.comboBoxPage.Properties.Appearance.Options.UseForeColor = true;
             this.comboBoxPage.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxPage.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.comboBoxPage.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxPage.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.comboBoxPage.Size = new System.Drawing.Size(52, 20);
             this.comboBoxPage.TabIndex = 2;

@@ -46,8 +46,8 @@ namespace com.VehicleAnalyse.Main.Views
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup4 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem4 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             this.galleryControl1 = new DevExpress.XtraBars.Ribbon.GalleryControl();
             this.galleryControlClient1 = new DevExpress.XtraBars.Ribbon.GalleryControlClient();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -71,26 +71,13 @@ namespace com.VehicleAnalyse.Main.Views
             // 
             this.galleryControl1.Gallery.AllowFilter = false;
             this.galleryControl1.Gallery.AllowMarqueeSelection = true;
-            this.galleryControl1.Gallery.Appearance.GroupCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.galleryControl1.Gallery.Appearance.GroupCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.galleryControl1.Gallery.Appearance.GroupCaption.Options.UseBackColor = true;
-            this.galleryControl1.Gallery.Appearance.GroupCaption.Options.UseForeColor = true;
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Hovered.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Hovered.Options.UseForeColor = true;
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Normal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Normal.Options.UseForeColor = true;
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Pressed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Pressed.Options.UseForeColor = true;
-            this.galleryControl1.Gallery.Appearance.ItemDescriptionAppearance.Normal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.galleryControl1.Gallery.Appearance.ItemDescriptionAppearance.Normal.Options.UseForeColor = true;
-            this.galleryControl1.Gallery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            galleryItemGroup4.Caption = "车标";
-            galleryItem4.Caption = "不限";
-            galleryItem4.Image = global::VehicleHelper.Properties.Resources._1565_questionmarkblue;
-            galleryItemGroup4.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem4});
+            galleryItemGroup1.Caption = "车标";
+            galleryItem1.Caption = "不限";
+            galleryItem1.Image = global::VehicleHelper.Properties.Resources._1565_questionmarkblue;
+            galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem1});
             this.galleryControl1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup4});
+            galleryItemGroup1});
             this.galleryControl1.Gallery.ImageSize = new System.Drawing.Size(48, 48);
             this.galleryControl1.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadioInGroup;
             this.galleryControl1.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.ZoomInside;
@@ -151,10 +138,8 @@ namespace com.VehicleAnalyse.Main.Views
             // 
             // FormCarStyle
             // 
-            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.Appearance.Options.UseBackColor = true;
-            this.Appearance.Options.UseForeColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 543);

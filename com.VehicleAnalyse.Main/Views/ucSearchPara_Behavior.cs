@@ -46,11 +46,7 @@ namespace com.VehicleAnalyse.Main.Views
             this.cmbEditDriverBelt.EditValue = "不限";
             this.cmbEditDriverBelt.Location = new System.Drawing.Point(100, 3);
             this.cmbEditDriverBelt.Name = "cmbEditDriverBelt";
-            this.cmbEditDriverBelt.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cmbEditDriverBelt.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbEditDriverBelt.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.cmbEditDriverBelt.Properties.Appearance.Options.UseBackColor = true;
-            this.cmbEditDriverBelt.Properties.Appearance.Options.UseForeColor = true;
             this.cmbEditDriverBelt.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cmbEditDriverBelt.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cmbEditDriverBelt.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
@@ -68,7 +64,6 @@ namespace com.VehicleAnalyse.Main.Views
             "未系",
             "已系"});
             this.cmbEditDriverBelt.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.cmbEditDriverBelt.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.cmbEditDriverBelt.Properties.NullText = "[EditValue is null]";
             this.cmbEditDriverBelt.Properties.PopupFormMinSize = new System.Drawing.Size(190, 20);
             this.cmbEditDriverBelt.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
@@ -77,7 +72,6 @@ namespace com.VehicleAnalyse.Main.Views
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.labelControl1.Location = new System.Drawing.Point(2, 7);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(58, 14);
@@ -90,7 +84,6 @@ namespace com.VehicleAnalyse.Main.Views
             this.Controls.Add(this.cmbEditDriverBelt);
             this.Controls.Add(this.labelControl1);
             this.Name = "ucSearchPara_Behavior";
-            this.Size = new System.Drawing.Size(196, 26);
             ((System.ComponentModel.ISupportInitialize)(this.cmbEditDriverBelt.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

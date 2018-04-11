@@ -98,7 +98,7 @@
             this.checkedListBoxControl1.CheckOnClick = true;
             this.checkedListBoxControl1.Location = new System.Drawing.Point(12, 32);
             this.checkedListBoxControl1.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkedListBoxControl1.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.checkedListBoxControl1.LookAndFeel.UseDefaultLookAndFeel = true;
             this.checkedListBoxControl1.Name = "checkedListBoxControl1";
             this.checkedListBoxControl1.Size = new System.Drawing.Size(333, 413);
             this.checkedListBoxControl1.TabIndex = 0;
@@ -150,7 +150,7 @@
             this.spinEditRealTimeTaskSendCount.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.spinEditRealTimeTaskSendCount.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.spinEditRealTimeTaskSendCount.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.spinEditRealTimeTaskSendCount.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.spinEditRealTimeTaskSendCount.Properties.MaxValue = new decimal(new int[] {
             100,
             0,
@@ -185,7 +185,7 @@
             this.textEditCutomizeTitle.Location = new System.Drawing.Point(99, 77);
             this.textEditCutomizeTitle.Name = "textEditCutomizeTitle";
             this.textEditCutomizeTitle.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.textEditCutomizeTitle.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.textEditCutomizeTitle.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.textEditCutomizeTitle.Size = new System.Drawing.Size(159, 20);
             this.textEditCutomizeTitle.TabIndex = 1;
             // 
@@ -195,7 +195,7 @@
             this.checkEditShowPeopleImg.Name = "checkEditShowPeopleImg";
             this.checkEditShowPeopleImg.Properties.Caption = "";
             this.checkEditShowPeopleImg.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkEditShowPeopleImg.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.checkEditShowPeopleImg.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.checkEditShowPeopleImg.Size = new System.Drawing.Size(75, 19);
             this.checkEditShowPeopleImg.TabIndex = 2;
             // 
@@ -213,7 +213,7 @@
             this.checkEditResultExportAsXls.Name = "checkEditResultExportAsXls";
             this.checkEditResultExportAsXls.Properties.Caption = "";
             this.checkEditResultExportAsXls.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkEditResultExportAsXls.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.checkEditResultExportAsXls.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.checkEditResultExportAsXls.Size = new System.Drawing.Size(75, 19);
             this.checkEditResultExportAsXls.TabIndex = 3;
             // 
@@ -231,7 +231,7 @@
             this.checkEditDrawVehicleRect.Name = "checkEditDrawVehicleRect";
             this.checkEditDrawVehicleRect.Properties.Caption = "";
             this.checkEditDrawVehicleRect.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkEditDrawVehicleRect.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.checkEditDrawVehicleRect.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.checkEditDrawVehicleRect.Size = new System.Drawing.Size(75, 19);
             this.checkEditDrawVehicleRect.TabIndex = 4;
             // 
@@ -249,7 +249,7 @@
             this.checkEditDrawPlateRect.Name = "checkEditDrawPlateRect";
             this.checkEditDrawPlateRect.Properties.Caption = "";
             this.checkEditDrawPlateRect.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkEditDrawPlateRect.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.checkEditDrawPlateRect.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.checkEditDrawPlateRect.Size = new System.Drawing.Size(75, 19);
             this.checkEditDrawPlateRect.TabIndex = 5;
             // 
@@ -267,7 +267,7 @@
             this.checkEditDrawAILabelRect.Name = "checkEditDrawAILabelRect";
             this.checkEditDrawAILabelRect.Properties.Caption = "";
             this.checkEditDrawAILabelRect.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkEditDrawAILabelRect.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.checkEditDrawAILabelRect.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.checkEditDrawAILabelRect.Size = new System.Drawing.Size(75, 19);
             this.checkEditDrawAILabelRect.TabIndex = 6;
             // 
@@ -343,7 +343,7 @@
             this.checkEditURLEncodingType.Name = "checkEditURLEncodingType";
             this.checkEditURLEncodingType.Properties.Caption = "";
             this.checkEditURLEncodingType.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkEditURLEncodingType.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.checkEditURLEncodingType.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.checkEditURLEncodingType.Size = new System.Drawing.Size(75, 19);
             this.checkEditURLEncodingType.TabIndex = 6;
             // 

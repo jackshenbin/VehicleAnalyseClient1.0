@@ -37,7 +37,7 @@ namespace com.VehicleAnalyse.Main.Framework
 
         private static string s_Version;
 
-        public static string PROGRAM_NAME = "博康慧眼—车侦系统客户端";
+        public static string PROGRAM_NAME = "车辆识别客户端";
 
         public static bool IsStarted { get; set; }
         public static string ServerIP

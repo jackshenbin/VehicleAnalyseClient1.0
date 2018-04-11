@@ -62,11 +62,7 @@ namespace com.VehicleAnalyse.Main.Views
             this.comboBoxEditPlateNo.EditValue = "沪A123456";
             this.comboBoxEditPlateNo.Location = new System.Drawing.Point(55, 3);
             this.comboBoxEditPlateNo.Name = "comboBoxEditPlateNo";
-            this.comboBoxEditPlateNo.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.comboBoxEditPlateNo.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.comboBoxEditPlateNo.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.comboBoxEditPlateNo.Properties.Appearance.Options.UseBackColor = true;
-            this.comboBoxEditPlateNo.Properties.Appearance.Options.UseForeColor = true;
             this.comboBoxEditPlateNo.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.comboBoxEditPlateNo.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.comboBoxEditPlateNo.Properties.AppearanceDropDown.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
@@ -80,28 +76,23 @@ namespace com.VehicleAnalyse.Main.Views
             this.comboBoxEditPlateNo.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.comboBoxEditPlateNo.Properties.HighlightedItemStyle = DevExpress.XtraEditors.HighlightStyle.Skinned;
             this.comboBoxEditPlateNo.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.comboBoxEditPlateNo.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxEditPlateNo.Size = new System.Drawing.Size(141, 20);
             this.comboBoxEditPlateNo.TabIndex = 104;
             // 
             // checkEditPlantNo
             // 
-            this.checkEditPlantNo.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.checkEditPlantNo.Location = new System.Drawing.Point(2, 7);
             this.checkEditPlantNo.Name = "checkEditPlantNo";
             this.checkEditPlantNo.Size = new System.Drawing.Size(24, 14);
             this.checkEditPlantNo.TabIndex = 105;
             this.checkEditPlantNo.Text = "车牌";
             // 
-            // checkEditShowPeopleImg
+            // checkEditNonePlate
             // 
             this.checkEditNonePlate.Location = new System.Drawing.Point(53, 27);
-            this.checkEditNonePlate.Name = "checkEditShowPeopleImg";
-            this.checkEditNonePlate.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.checkEditNonePlate.Properties.Appearance.Options.UseForeColor = true;
+            this.checkEditNonePlate.Name = "checkEditNonePlate";
             this.checkEditNonePlate.Properties.Caption = "无牌车";
             this.checkEditNonePlate.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkEditNonePlate.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.checkEditNonePlate.Size = new System.Drawing.Size(140, 19);
             this.checkEditNonePlate.TabIndex = 106;
             this.checkEditNonePlate.CheckedChanged += new System.EventHandler(this.checkEditNonePlate_CheckedChanged);

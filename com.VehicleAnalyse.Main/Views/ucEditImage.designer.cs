@@ -126,7 +126,7 @@ namespace com.VehicleAnalyse.Main.Views
             this.picEditThumb.Properties.Appearance.Options.UseBackColor = true;
             this.picEditThumb.Properties.Appearance.Options.UseForeColor = true;
             this.picEditThumb.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.picEditThumb.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.picEditThumb.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.picEditThumb.Properties.ShowMenu = false;
             this.picEditThumb.Size = new System.Drawing.Size(194, 180);
             this.picEditThumb.TabIndex = 14;
@@ -202,7 +202,7 @@ namespace com.VehicleAnalyse.Main.Views
             this.picEditOriginal.Properties.Appearance.Options.UseForeColor = true;
             this.picEditOriginal.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.picEditOriginal.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.picEditOriginal.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.picEditOriginal.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.picEditOriginal.Properties.ShowMenu = false;
             this.picEditOriginal.Size = new System.Drawing.Size(420, 423);
             this.picEditOriginal.TabIndex = 22;
@@ -247,7 +247,7 @@ namespace com.VehicleAnalyse.Main.Views
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(202, 0);
             this.panelControl1.LookAndFeel.SkinName = "Darkroom";
-            this.panelControl1.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.panelControl1.LookAndFeel.UseDefaultLookAndFeel = true;
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(420, 423);
             this.panelControl1.TabIndex = 25;

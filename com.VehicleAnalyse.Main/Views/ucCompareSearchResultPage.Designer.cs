@@ -201,8 +201,8 @@
             // 
             // panelControl1
             // 
-            this.panelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.panelControl1.Controls.Add(this.ucPictureBoxRegion1);
             this.panelControl1.Controls.Add(this.pictureBox1);
             this.panelControl1.Controls.Add(this.ucPictureBoxShowRegion1);
@@ -413,7 +413,6 @@
             this.simpleButtonComit.Appearance.Options.UseForeColor = true;
             this.simpleButtonComit.Location = new System.Drawing.Point(59, 598);
             this.simpleButtonComit.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Office2003;
-            this.simpleButtonComit.LookAndFeel.UseDefaultLookAndFeel = false;
             this.simpleButtonComit.Name = "simpleButtonComit";
             this.simpleButtonComit.Size = new System.Drawing.Size(120, 28);
             this.simpleButtonComit.TabIndex = 13;
@@ -492,9 +491,9 @@
             // 
             // panelControl3
             // 
-            this.panelControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panelControl3.Controls.Add(this.ucNoGroupSubResultPage1);
             this.panelControl3.Controls.Add(this.ucPlateGroupSubResultPage1);
             this.panelControl3.Controls.Add(this.panelControl2);
@@ -505,9 +504,9 @@
             // 
             // ucNoGroupSubResultPage1
             // 
-            this.ucNoGroupSubResultPage1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucNoGroupSubResultPage1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.ucNoGroupSubResultPage1.Location = new System.Drawing.Point(0, 35);
             this.ucNoGroupSubResultPage1.Name = "ucNoGroupSubResultPage1";
             this.ucNoGroupSubResultPage1.Size = new System.Drawing.Size(670, 611);
@@ -515,9 +514,9 @@
             // 
             // ucPlateGroupSubResultPage1
             // 
-            this.ucPlateGroupSubResultPage1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucPlateGroupSubResultPage1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.ucPlateGroupSubResultPage1.CurrPageRecords = null;
             this.ucPlateGroupSubResultPage1.Location = new System.Drawing.Point(0, 35);
             this.ucPlateGroupSubResultPage1.Name = "ucPlateGroupSubResultPage1";
@@ -526,9 +525,9 @@
             // 
             // ucSingleResultDetailInfo1
             // 
-            this.ucSingleResultDetailInfo1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucSingleResultDetailInfo1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.ucSingleResultDetailInfo1.Location = new System.Drawing.Point(103, 82);
             this.ucSingleResultDetailInfo1.Name = "ucSingleResultDetailInfo1";
             this.ucSingleResultDetailInfo1.Size = new System.Drawing.Size(758, 499);
@@ -537,10 +536,9 @@
             // 
             // pictureBoxLoading
             // 
-            this.pictureBoxLoading.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxLoading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pictureBoxLoading.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxLoading.Image = global::com.VehicleAnalyse.Main.Properties.Resources._81559e59_526a_4e13_b18b_4632691d7958;
             this.pictureBoxLoading.Location = new System.Drawing.Point(289, 39);
             this.pictureBoxLoading.Name = "pictureBoxLoading";

@@ -32,11 +32,7 @@ namespace com.VehicleAnalyse.Main.Views
             this.cmbBoxTasks.EditValue = "";
             this.cmbBoxTasks.Location = new System.Drawing.Point(55, 3);
             this.cmbBoxTasks.Name = "cmbBoxTasks";
-            this.cmbBoxTasks.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cmbBoxTasks.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbBoxTasks.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.cmbBoxTasks.Properties.Appearance.Options.UseBackColor = true;
-            this.cmbBoxTasks.Properties.Appearance.Options.UseForeColor = true;
             this.cmbBoxTasks.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cmbBoxTasks.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cmbBoxTasks.Properties.AppearanceDropDown.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
@@ -51,7 +47,6 @@ namespace com.VehicleAnalyse.Main.Views
             this.cmbBoxTasks.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbBoxTasks.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.cmbBoxTasks.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.cmbBoxTasks.Properties.NullText = "[EditValue is null]";
             this.cmbBoxTasks.Properties.PopupFormMinSize = new System.Drawing.Size(190, 20);
             this.cmbBoxTasks.Size = new System.Drawing.Size(141, 20);
@@ -60,7 +55,6 @@ namespace com.VehicleAnalyse.Main.Views
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.labelControl2.Location = new System.Drawing.Point(2, 5);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(24, 14);

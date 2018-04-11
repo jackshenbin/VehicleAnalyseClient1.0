@@ -341,7 +341,7 @@
             this.comboBoxPage.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxPage.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.comboBoxPage.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.comboBoxPage.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.comboBoxPage.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.comboBoxPage.Size = new System.Drawing.Size(52, 20);
             this.comboBoxPage.TabIndex = 2;

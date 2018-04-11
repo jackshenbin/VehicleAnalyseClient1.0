@@ -27,7 +27,6 @@ namespace com.VehicleAnalyse.Main.Views
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.labelControl2.Location = new System.Drawing.Point(2, 5);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(24, 14);
@@ -40,15 +39,10 @@ namespace com.VehicleAnalyse.Main.Views
             this.checkedComboBoxEdit1.EditValue = "";
             this.checkedComboBoxEdit1.Location = new System.Drawing.Point(54, 3);
             this.checkedComboBoxEdit1.Name = "checkedComboBoxEdit1";
-            this.checkedComboBoxEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.checkedComboBoxEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.checkedComboBoxEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.checkedComboBoxEdit1.Properties.Appearance.Options.UseForeColor = true;
             this.checkedComboBoxEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.checkedComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.checkedComboBoxEdit1.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkedComboBoxEdit1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.checkedComboBoxEdit1.Size = new System.Drawing.Size(141, 20);
             this.checkedComboBoxEdit1.TabIndex = 103;
             this.checkedComboBoxEdit1.EditValueChanged += new System.EventHandler(this.checkedComboBoxEdit1_EditValueChanged);

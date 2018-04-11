@@ -68,13 +68,10 @@
             this.btnSearch.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSearch.Appearance.BackColor2 = System.Drawing.SystemColors.HotTrack;
             this.btnSearch.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.btnSearch.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.btnSearch.Appearance.Options.UseBackColor = true;
             this.btnSearch.Appearance.Options.UseFont = true;
-            this.btnSearch.Appearance.Options.UseForeColor = true;
             this.btnSearch.Location = new System.Drawing.Point(151, 440);
             this.btnSearch.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Office2003;
-            this.btnSearch.LookAndFeel.UseDefaultLookAndFeel = false;
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(65, 24);
             this.btnSearch.TabIndex = 118;
@@ -91,7 +88,6 @@
             this.pictureEdit2.Properties.Appearance.Options.UseForeColor = true;
             this.pictureEdit2.Properties.InitialImage = global::com.VehicleAnalyse.Main.Properties.Resources.bocom;
             this.pictureEdit2.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.pictureEdit2.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.pictureEdit2.Properties.NullText = "没有图片";
             this.pictureEdit2.Properties.ShowMenu = false;
             this.pictureEdit2.Size = new System.Drawing.Size(385, 377);

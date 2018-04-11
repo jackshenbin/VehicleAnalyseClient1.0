@@ -66,7 +66,6 @@
             this.checkEditVehicle.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditVehicle.Properties.Caption = "车牌优先";
             this.checkEditVehicle.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkEditVehicle.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.checkEditVehicle.Size = new System.Drawing.Size(75, 19);
             this.checkEditVehicle.TabIndex = 0;
             this.checkEditVehicle.CheckedChanged += new System.EventHandler(this.checkEditVehicle_CheckedChanged);
@@ -89,7 +88,6 @@
             this.checkEdit2.Properties.Appearance.Options.UseForeColor = true;
             this.checkEdit2.Properties.Caption = "颜色优先";
             this.checkEdit2.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkEdit2.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.checkEdit2.Size = new System.Drawing.Size(75, 19);
             this.checkEdit2.TabIndex = 0;
             // 
@@ -102,7 +100,6 @@
             this.checkEdit3.Properties.Appearance.Options.UseForeColor = true;
             this.checkEdit3.Properties.Caption = "车型优先";
             this.checkEdit3.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkEdit3.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.checkEdit3.Size = new System.Drawing.Size(75, 19);
             this.checkEdit3.TabIndex = 0;
             // 
@@ -115,7 +112,6 @@
             this.checkEdit4.Properties.Appearance.Options.UseForeColor = true;
             this.checkEdit4.Properties.Caption = "品牌优先";
             this.checkEdit4.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkEdit4.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.checkEdit4.Size = new System.Drawing.Size(75, 19);
             this.checkEdit4.TabIndex = 0;
             // 
@@ -124,14 +120,9 @@
             this.comboBoxEdit1.Enabled = false;
             this.comboBoxEdit1.Location = new System.Drawing.Point(205, 82);
             this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.comboBoxEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.comboBoxEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.comboBoxEdit1.Properties.Appearance.Options.UseForeColor = true;
             this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEdit1.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.comboBoxEdit1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxEdit1.Size = new System.Drawing.Size(100, 20);
             this.comboBoxEdit1.TabIndex = 2;
             // 
@@ -140,14 +131,9 @@
             this.comboBoxEdit2.Enabled = false;
             this.comboBoxEdit2.Location = new System.Drawing.Point(205, 58);
             this.comboBoxEdit2.Name = "comboBoxEdit2";
-            this.comboBoxEdit2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.comboBoxEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.comboBoxEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.comboBoxEdit2.Properties.Appearance.Options.UseForeColor = true;
             this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEdit2.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.comboBoxEdit2.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxEdit2.Size = new System.Drawing.Size(100, 20);
             this.comboBoxEdit2.TabIndex = 2;
             // 
@@ -156,14 +142,9 @@
             this.comboBoxEdit3.Enabled = false;
             this.comboBoxEdit3.Location = new System.Drawing.Point(205, 33);
             this.comboBoxEdit3.Name = "comboBoxEdit3";
-            this.comboBoxEdit3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.comboBoxEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.comboBoxEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.comboBoxEdit3.Properties.Appearance.Options.UseForeColor = true;
             this.comboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEdit3.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.comboBoxEdit3.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxEdit3.Size = new System.Drawing.Size(100, 20);
             this.comboBoxEdit3.TabIndex = 2;
             // 
@@ -172,10 +153,6 @@
             this.comboBoxEditPlateNo.EditValue = "京";
             this.comboBoxEditPlateNo.Location = new System.Drawing.Point(205, 7);
             this.comboBoxEditPlateNo.Name = "comboBoxEditPlateNo";
-            this.comboBoxEditPlateNo.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.comboBoxEditPlateNo.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.comboBoxEditPlateNo.Properties.Appearance.Options.UseBackColor = true;
-            this.comboBoxEditPlateNo.Properties.Appearance.Options.UseForeColor = true;
             this.comboBoxEditPlateNo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditPlateNo.Properties.Items.AddRange(new object[] {
@@ -214,7 +191,6 @@
             "澳",
             "港"});
             this.comboBoxEditPlateNo.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.comboBoxEditPlateNo.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxEditPlateNo.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.comboBoxEditPlateNo.Size = new System.Drawing.Size(34, 20);
             this.comboBoxEditPlateNo.TabIndex = 3;
@@ -262,14 +238,9 @@
             0});
             this.spinEditCount.Location = new System.Drawing.Point(83, 137);
             this.spinEditCount.Name = "spinEditCount";
-            this.spinEditCount.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.spinEditCount.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.spinEditCount.Properties.Appearance.Options.UseBackColor = true;
-            this.spinEditCount.Properties.Appearance.Options.UseForeColor = true;
             this.spinEditCount.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.spinEditCount.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.spinEditCount.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.spinEditCount.Properties.MaxValue = new decimal(new int[] {
             300,
             0,
@@ -283,13 +254,8 @@
             this.textEditPlateNo.EditValue = "";
             this.textEditPlateNo.Location = new System.Drawing.Point(245, 7);
             this.textEditPlateNo.Name = "textEditPlateNo";
-            this.textEditPlateNo.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.textEditPlateNo.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.textEditPlateNo.Properties.Appearance.Options.UseBackColor = true;
-            this.textEditPlateNo.Properties.Appearance.Options.UseForeColor = true;
             this.textEditPlateNo.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textEditPlateNo.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.textEditPlateNo.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.textEditPlateNo.Size = new System.Drawing.Size(60, 20);
             this.textEditPlateNo.TabIndex = 9;
             // 
@@ -302,7 +268,6 @@
             this.simpleButtonOK.Appearance.Options.UseForeColor = true;
             this.simpleButtonOK.Location = new System.Drawing.Point(193, 137);
             this.simpleButtonOK.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.simpleButtonOK.LookAndFeel.UseDefaultLookAndFeel = false;
             this.simpleButtonOK.Name = "simpleButtonOK";
             this.simpleButtonOK.Size = new System.Drawing.Size(53, 23);
             this.simpleButtonOK.TabIndex = 10;
@@ -318,7 +283,6 @@
             this.simpleButton1.Appearance.Options.UseForeColor = true;
             this.simpleButton1.Location = new System.Drawing.Point(252, 137);
             this.simpleButton1.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.simpleButton1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(53, 23);
             this.simpleButton1.TabIndex = 10;

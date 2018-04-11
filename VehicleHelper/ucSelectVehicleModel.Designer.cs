@@ -59,7 +59,6 @@
             // 
             // checkEditCarStyle
             // 
-            this.checkEditCarStyle.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.checkEditCarStyle.Location = new System.Drawing.Point(2, 10);
             this.checkEditCarStyle.Name = "checkEditCarStyle";
             this.checkEditCarStyle.Size = new System.Drawing.Size(24, 14);
@@ -68,8 +67,8 @@
             // 
             // checkedComboBoxEdit1
             // 
-            this.checkedComboBoxEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkedComboBoxEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.checkedComboBoxEdit1.Location = new System.Drawing.Point(57, 44);
             this.checkedComboBoxEdit1.Margin = new System.Windows.Forms.Padding(3, 3, 9, 3);
             this.checkedComboBoxEdit1.Name = "checkedComboBoxEdit1";
@@ -86,7 +85,6 @@
             this.checkedComboBoxEdit1.Properties.DisplayMember = "Name";
             this.checkedComboBoxEdit1.Properties.HideSelection = false;
             this.checkedComboBoxEdit1.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.checkedComboBoxEdit1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.checkedComboBoxEdit1.Properties.PopupFormMinSize = new System.Drawing.Size(120, 160);
             this.checkedComboBoxEdit1.Properties.SelectAllItemCaption = "全选";
             this.checkedComboBoxEdit1.Size = new System.Drawing.Size(106, 20);

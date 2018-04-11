@@ -49,9 +49,9 @@
             // 
             // pictureEdit1
             // 
-            this.pictureEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureEdit1.Location = new System.Drawing.Point(5, 5);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.AllowFocused = false;
@@ -59,7 +59,6 @@
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.pictureEdit1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.pictureEdit1.Properties.NullText = "没有图片";
             this.pictureEdit1.Properties.PictureInterpolationMode = System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor;
             this.pictureEdit1.Properties.ShowMenu = false;
@@ -114,11 +113,6 @@
             // simpleButtonPriv
             // 
             this.simpleButtonPriv.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.simpleButtonPriv.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.simpleButtonPriv.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.simpleButtonPriv.Appearance.ForeColor = System.Drawing.Color.Silver;
-            this.simpleButtonPriv.Appearance.Options.UseBackColor = true;
-            this.simpleButtonPriv.Appearance.Options.UseForeColor = true;
             this.simpleButtonPriv.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButtonPriv.Enabled = false;
             this.simpleButtonPriv.Location = new System.Drawing.Point(5, 243);
@@ -131,11 +125,6 @@
             // simpleButtonNext
             // 
             this.simpleButtonNext.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.simpleButtonNext.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.simpleButtonNext.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.simpleButtonNext.Appearance.ForeColor = System.Drawing.Color.Silver;
-            this.simpleButtonNext.Appearance.Options.UseBackColor = true;
-            this.simpleButtonNext.Appearance.Options.UseForeColor = true;
             this.simpleButtonNext.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButtonNext.Enabled = false;
             this.simpleButtonNext.Location = new System.Drawing.Point(845, 243);
@@ -147,8 +136,8 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Controls.Add(this.labelControlCam);
             this.flowLayoutPanel1.Controls.Add(this.labelControlTime);
@@ -160,9 +149,9 @@
             // 
             // panelControl1
             // 
-            this.panelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.panelControl1.Controls.Add(this.flowLayoutPanel1);
             this.panelControl1.Controls.Add(this.pictureEdit1);
             this.panelControl1.Location = new System.Drawing.Point(38, 58);

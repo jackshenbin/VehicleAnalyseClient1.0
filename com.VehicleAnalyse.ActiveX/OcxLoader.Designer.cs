@@ -47,7 +47,7 @@
             this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraTabControl1.Location = new System.Drawing.Point(0, 0);
             this.xtraTabControl1.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.xtraTabControl1.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.xtraTabControl1.LookAndFeel.UseDefaultLookAndFeel = true;
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
             this.xtraTabControl1.Size = new System.Drawing.Size(600, 330);
@@ -74,7 +74,7 @@
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.labelControl1.Location = new System.Drawing.Point(0, 330);
             this.labelControl1.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.labelControl1.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.labelControl1.LookAndFeel.UseDefaultLookAndFeel = true;
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Padding = new System.Windows.Forms.Padding(3);
             this.labelControl1.Size = new System.Drawing.Size(42, 20);
@@ -90,7 +90,7 @@
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.labelControl1);
             this.LookAndFeel.SkinName = "Sharp Plus";
-            this.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.LookAndFeel.UseDefaultLookAndFeel = true;
             this.Name = "OcxLoader";
             this.Size = new System.Drawing.Size(600, 350);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
