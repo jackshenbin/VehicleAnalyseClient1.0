@@ -62,8 +62,6 @@
             this.checkEditVehicle.EditValue = true;
             this.checkEditVehicle.Location = new System.Drawing.Point(81, 8);
             this.checkEditVehicle.Name = "checkEditVehicle";
-            this.checkEditVehicle.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.checkEditVehicle.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditVehicle.Properties.Caption = "车牌优先";
             this.checkEditVehicle.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
             this.checkEditVehicle.Size = new System.Drawing.Size(75, 19);
@@ -72,7 +70,6 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.labelControl1.Location = new System.Drawing.Point(8, 10);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(48, 14);
@@ -84,8 +81,6 @@
             this.checkEdit2.Enabled = false;
             this.checkEdit2.Location = new System.Drawing.Point(81, 59);
             this.checkEdit2.Name = "checkEdit2";
-            this.checkEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.checkEdit2.Properties.Appearance.Options.UseForeColor = true;
             this.checkEdit2.Properties.Caption = "颜色优先";
             this.checkEdit2.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
             this.checkEdit2.Size = new System.Drawing.Size(75, 19);
@@ -96,8 +91,6 @@
             this.checkEdit3.Enabled = false;
             this.checkEdit3.Location = new System.Drawing.Point(81, 33);
             this.checkEdit3.Name = "checkEdit3";
-            this.checkEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.checkEdit3.Properties.Appearance.Options.UseForeColor = true;
             this.checkEdit3.Properties.Caption = "车型优先";
             this.checkEdit3.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
             this.checkEdit3.Size = new System.Drawing.Size(75, 19);
@@ -108,8 +101,6 @@
             this.checkEdit4.Enabled = false;
             this.checkEdit4.Location = new System.Drawing.Point(81, 82);
             this.checkEdit4.Name = "checkEdit4";
-            this.checkEdit4.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.checkEdit4.Properties.Appearance.Options.UseForeColor = true;
             this.checkEdit4.Properties.Caption = "品牌优先";
             this.checkEdit4.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
             this.checkEdit4.Size = new System.Drawing.Size(75, 19);
@@ -197,7 +188,6 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.labelControl2.Location = new System.Drawing.Point(8, 108);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(24, 14);
@@ -222,7 +212,6 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.labelControl3.Location = new System.Drawing.Point(8, 140);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(60, 14);
@@ -263,9 +252,7 @@
             // 
             this.simpleButtonOK.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.simpleButtonOK.Appearance.BackColor2 = System.Drawing.Color.Transparent;
-            this.simpleButtonOK.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.simpleButtonOK.Appearance.Options.UseBackColor = true;
-            this.simpleButtonOK.Appearance.Options.UseForeColor = true;
             this.simpleButtonOK.Location = new System.Drawing.Point(193, 137);
             this.simpleButtonOK.LookAndFeel.SkinName = "DevExpress Dark Style";
             this.simpleButtonOK.Name = "simpleButtonOK";
@@ -278,9 +265,7 @@
             // 
             this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.simpleButton1.Appearance.BackColor2 = System.Drawing.Color.Transparent;
-            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.Appearance.Options.UseForeColor = true;
             this.simpleButton1.Location = new System.Drawing.Point(252, 137);
             this.simpleButton1.LookAndFeel.SkinName = "DevExpress Dark Style";
             this.simpleButton1.Name = "simpleButton1";
@@ -291,7 +276,6 @@
             // 
             // labelControlWeight
             // 
-            this.labelControlWeight.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.labelControlWeight.Location = new System.Drawing.Point(279, 112);
             this.labelControlWeight.Name = "labelControlWeight";
             this.labelControlWeight.Size = new System.Drawing.Size(21, 14);

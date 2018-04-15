@@ -407,7 +407,6 @@
             this.simpleButtonComit.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
             this.simpleButtonComit.Appearance.BackColor2 = System.Drawing.SystemColors.HotTrack;
             this.simpleButtonComit.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButtonComit.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.simpleButtonComit.Appearance.Options.UseBackColor = true;
             this.simpleButtonComit.Appearance.Options.UseFont = true;
             this.simpleButtonComit.Appearance.Options.UseForeColor = true;

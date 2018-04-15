@@ -69,10 +69,8 @@ namespace com.VehicleAnalyse.Main.Views
 
 
                 LinkLabel linkLabel = new LinkLabel();
-                linkLabel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
                 linkLabel.AutoSize = true;
                 linkLabel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-                linkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
                 linkLabel.Location = new System.Drawing.Point(3, 3);
                 linkLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
                 linkLabel.Size = new System.Drawing.Size(16, 14);

@@ -190,9 +190,9 @@
             // 
             // ucSingleResultDetailInfo1
             // 
-            this.ucSingleResultDetailInfo1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucSingleResultDetailInfo1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.ucSingleResultDetailInfo1.Location = new System.Drawing.Point(103, 82);
             this.ucSingleResultDetailInfo1.Name = "ucSingleResultDetailInfo1";
             this.ucSingleResultDetailInfo1.Size = new System.Drawing.Size(758, 499);
@@ -280,14 +280,12 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.flowLayoutPanel1.Controls.Add(this.btnNextPage);
             this.flowLayoutPanel1.Controls.Add(this.lblControlPageCount);
             this.flowLayoutPanel1.Controls.Add(this.labelControl11);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxPage);
             this.flowLayoutPanel1.Controls.Add(this.btnPrePage);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.flowLayoutPanel1.Location = new System.Drawing.Point(787, 623);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -334,14 +332,9 @@
             this.comboBoxPage.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.comboBoxPage.Name = "comboBoxPage";
             this.comboBoxPage.Properties.AllowMouseWheel = false;
-            this.comboBoxPage.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.comboBoxPage.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.comboBoxPage.Properties.Appearance.Options.UseBackColor = true;
-            this.comboBoxPage.Properties.Appearance.Options.UseForeColor = true;
             this.comboBoxPage.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxPage.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
-            this.comboBoxPage.Properties.LookAndFeel.UseDefaultLookAndFeel = true;
             this.comboBoxPage.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.comboBoxPage.Size = new System.Drawing.Size(52, 20);
             this.comboBoxPage.TabIndex = 2;
@@ -387,9 +380,9 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 6;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));

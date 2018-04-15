@@ -30,15 +30,6 @@ namespace com.VehicleAnalyse.Main.Views
             this.cmbBoxVehicleDetailType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbBoxVehicleDetailType.Location = new System.Drawing.Point(56, 3);
             this.cmbBoxVehicleDetailType.Name = "cmbBoxVehicleDetailType";
-            this.cmbBoxVehicleDetailType.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbBoxVehicleDetailType.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbBoxVehicleDetailType.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbBoxVehicleDetailType.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.cmbBoxVehicleDetailType.Properties.AppearanceDropDown.Options.UseBackColor = true;
-            this.cmbBoxVehicleDetailType.Properties.AppearanceDropDown.Options.UseForeColor = true;
-            this.cmbBoxVehicleDetailType.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbBoxVehicleDetailType.Properties.AppearanceFocused.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbBoxVehicleDetailType.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.cmbBoxVehicleDetailType.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.cmbBoxVehicleDetailType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});

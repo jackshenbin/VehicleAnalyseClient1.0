@@ -62,14 +62,6 @@ namespace com.VehicleAnalyse.Main.Views
             this.comboBoxEditPlateNo.EditValue = "沪A123456";
             this.comboBoxEditPlateNo.Location = new System.Drawing.Point(55, 3);
             this.comboBoxEditPlateNo.Name = "comboBoxEditPlateNo";
-            this.comboBoxEditPlateNo.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.comboBoxEditPlateNo.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.comboBoxEditPlateNo.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.comboBoxEditPlateNo.Properties.AppearanceDropDown.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.comboBoxEditPlateNo.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.comboBoxEditPlateNo.Properties.AppearanceDropDown.Options.UseBackColor = true;
-            this.comboBoxEditPlateNo.Properties.AppearanceDropDown.Options.UseBorderColor = true;
-            this.comboBoxEditPlateNo.Properties.AppearanceDropDown.Options.UseForeColor = true;
             this.comboBoxEditPlateNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.comboBoxEditPlateNo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});

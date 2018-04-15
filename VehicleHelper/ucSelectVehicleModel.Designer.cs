@@ -72,8 +72,6 @@
             this.checkedComboBoxEdit1.Location = new System.Drawing.Point(57, 44);
             this.checkedComboBoxEdit1.Margin = new System.Windows.Forms.Padding(3, 3, 9, 3);
             this.checkedComboBoxEdit1.Name = "checkedComboBoxEdit1";
-            this.checkedComboBoxEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.checkedComboBoxEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.checkedComboBoxEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.checkedComboBoxEdit1.Properties.Appearance.Options.UseForeColor = true;
             this.checkedComboBoxEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
@@ -95,7 +93,6 @@
             // 
             // labelControl6
             // 
-            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.labelControl6.Location = new System.Drawing.Point(2, 47);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(48, 14);

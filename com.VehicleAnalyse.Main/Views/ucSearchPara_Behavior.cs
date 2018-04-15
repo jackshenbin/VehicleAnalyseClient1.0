@@ -46,15 +46,6 @@ namespace com.VehicleAnalyse.Main.Views
             this.cmbEditDriverBelt.EditValue = "不限";
             this.cmbEditDriverBelt.Location = new System.Drawing.Point(100, 3);
             this.cmbEditDriverBelt.Name = "cmbEditDriverBelt";
-            this.cmbEditDriverBelt.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbEditDriverBelt.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbEditDriverBelt.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbEditDriverBelt.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.cmbEditDriverBelt.Properties.AppearanceDropDown.Options.UseBackColor = true;
-            this.cmbEditDriverBelt.Properties.AppearanceDropDown.Options.UseForeColor = true;
-            this.cmbEditDriverBelt.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbEditDriverBelt.Properties.AppearanceFocused.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbEditDriverBelt.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.cmbEditDriverBelt.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.cmbEditDriverBelt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});

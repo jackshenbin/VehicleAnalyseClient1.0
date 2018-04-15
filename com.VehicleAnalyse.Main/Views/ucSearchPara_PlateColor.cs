@@ -29,9 +29,6 @@ namespace com.VehicleAnalyse.Main.Views
             // 
             this.colorCmbBoxPlate.Location = new System.Drawing.Point(55, 3);
             this.colorCmbBoxPlate.Name = "colorCmbBoxPlate";
-            this.colorCmbBoxPlate.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.colorCmbBoxPlate.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.colorCmbBoxPlate.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.colorCmbBoxPlate.Properties.AppearanceDropDown.Options.UseBackColor = true;
             this.colorCmbBoxPlate.Properties.AppearanceDropDown.Options.UseForeColor = true;
             this.colorCmbBoxPlate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {

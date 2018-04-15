@@ -604,7 +604,6 @@
             this.btnShowSettings.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnShowSettings.Appearance.BackColor2 = System.Drawing.SystemColors.HotTrack;
             this.btnShowSettings.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowSettings.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.btnShowSettings.Appearance.Options.UseBackColor = true;
             this.btnShowSettings.Appearance.Options.UseFont = true;
             this.btnShowSettings.Appearance.Options.UseForeColor = true;
@@ -2091,7 +2090,6 @@
             this.chkBoxEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkBoxEdit.Location = new System.Drawing.Point(224, 5);
             this.chkBoxEdit.Name = "chkBoxEdit";
-            this.chkBoxEdit.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.chkBoxEdit.Properties.Appearance.Options.UseForeColor = true;
             this.chkBoxEdit.Properties.AutoWidth = true;
             this.chkBoxEdit.Properties.Caption = "编辑";
@@ -2261,7 +2259,6 @@
             this.checkEditExportIncludePics.Location = new System.Drawing.Point(413, 3);
             this.checkEditExportIncludePics.Name = "checkEditExportIncludePics";
             this.checkEditExportIncludePics.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.checkEditExportIncludePics.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.checkEditExportIncludePics.Properties.Appearance.Options.UseBackColor = true;
             this.checkEditExportIncludePics.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditExportIncludePics.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
@@ -2275,7 +2272,6 @@
             // labelControl4
             // 
             this.labelControl4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.labelControl4.Location = new System.Drawing.Point(355, 7);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(52, 14);

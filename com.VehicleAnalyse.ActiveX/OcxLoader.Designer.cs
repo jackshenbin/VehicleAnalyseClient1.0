@@ -70,7 +70,6 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.labelControl1.Location = new System.Drawing.Point(0, 330);
             this.labelControl1.LookAndFeel.SkinName = "DevExpress Dark Style";

@@ -37,15 +37,6 @@ namespace com.VehicleAnalyse.Main.Views
             this.cmbBoxEditResultType.EditValue = "不限";
             this.cmbBoxEditResultType.Location = new System.Drawing.Point(55, 3);
             this.cmbBoxEditResultType.Name = "cmbBoxEditResultType";
-            this.cmbBoxEditResultType.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbBoxEditResultType.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbBoxEditResultType.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbBoxEditResultType.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.cmbBoxEditResultType.Properties.AppearanceDropDown.Options.UseBackColor = true;
-            this.cmbBoxEditResultType.Properties.AppearanceDropDown.Options.UseForeColor = true;
-            this.cmbBoxEditResultType.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbBoxEditResultType.Properties.AppearanceFocused.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cmbBoxEditResultType.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.cmbBoxEditResultType.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.cmbBoxEditResultType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});

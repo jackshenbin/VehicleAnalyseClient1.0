@@ -61,7 +61,6 @@
             // 
             // ucTaskList21
             // 
-            this.ucTaskList21.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ucTaskList21.Appearance.Options.UseBackColor = true;
             this.ucTaskList21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucTaskList21.Enabled = false;

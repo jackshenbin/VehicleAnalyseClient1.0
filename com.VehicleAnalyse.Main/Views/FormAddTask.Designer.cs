@@ -248,8 +248,6 @@ namespace com.VehicleAnalyse.Main.Views
             // 
             this.checkBox1.Location = new System.Drawing.Point(183, 29);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.checkBox1.Properties.Appearance.Options.UseForeColor = true;
             this.checkBox1.Properties.Caption = "包含子文件夹";
             this.checkBox1.Size = new System.Drawing.Size(98, 19);
             this.checkBox1.TabIndex = 2;
