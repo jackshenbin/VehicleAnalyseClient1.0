@@ -170,7 +170,6 @@
             // pictureEdit1
             // 
             this.pictureEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureEdit1.EditValue = global::com.VehicleAnalyse.Main.Properties.Resources.bocom;
             this.pictureEdit1.Location = new System.Drawing.Point(739, 0);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.AllowFocused = false;

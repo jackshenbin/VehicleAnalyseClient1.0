@@ -86,7 +86,6 @@
             this.pictureEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit2.Properties.Appearance.Options.UseForeColor = true;
-            this.pictureEdit2.Properties.InitialImage = global::com.VehicleAnalyse.Main.Properties.Resources.bocom;
             this.pictureEdit2.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
             this.pictureEdit2.Properties.NullText = "没有图片";
             this.pictureEdit2.Properties.ShowMenu = false;

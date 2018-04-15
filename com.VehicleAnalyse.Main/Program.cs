@@ -18,6 +18,7 @@ namespace com.VehicleAnalyse.Main
         [STAThread]
         static void Main()
         {
+            MyLog4Net.Container.Instance.Log.Info("---------------------------------------------------");
             Application.ThreadException +=new System.Threading.ThreadExceptionEventHandler(Application_ThreadException);
 
             try

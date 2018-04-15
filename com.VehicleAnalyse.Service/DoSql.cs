@@ -13,7 +13,6 @@ namespace com.VehicleAnalyse.Service
         static string Pass;
         static string connstring
         {
-            //get { return "Server=127.0.0.1;Database=;Uid=root;Pwd=bocom;pooling=false;charset=gbk"; }
             get { return "Server={0};Uid={1};Pwd={2};pooling=false;charset=utf8;database=iratalydatadb"; }
         }
 

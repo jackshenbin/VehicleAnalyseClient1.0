@@ -567,30 +567,6 @@ namespace com.VehicleAnalyse.Main.Views
                     time = obj.ToString();
             }
             string FileName = resourcename.Replace(".", "_") + "结果" + time.Replace(":", "_").Replace(".", "_").Replace("/", "_") + ".jpg";
-            //if ((Program.PRODUCT_TYPE & Framework.Environment.E_PRODUCT_TYPE.SH_PRODUCT) > 0)
-            //{
-            //    //#if SHANGHAIPRODUCT
-            //    FileName = BOCOM.IVX.Framework.Environment.PictureSavePath + @"\" + FileName;
-            //    //#else
-            //}
-            //else
-            //{
-            //    SaveFileDialog sfd = new SaveFileDialog();
-            //    sfd.RestoreDirectory = true;
-
-            //    sfd.Filter = "JPG文件|*.jpg";
-            //    sfd.FileName = FileName;
-            //    sfd.InitialDirectory = BOCOM.IVX.Framework.Environment.PictureSavePath;
-            //    if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            //    {
-            //        FileName = sfd.FileName;
-            //    }
-            //    else
-            //    {
-            //        return;
-            //    }
-            //    //#endif
-            //}
 
             // 保存文件
             Trace.WriteLine("btnSave_Click, FileName:" + FileName);
@@ -604,16 +580,6 @@ namespace com.VehicleAnalyse.Main.Views
 
             System.IO.FileInfo temp = new System.IO.FileInfo(FileName);
             int hrItem = (int)DateTime.Now.Ticks;
-            //BOCOM.IVX.Framework.Container.Instance.DownloadItemViewModel.UpdateProgress(new DownloadItemInfo
-            //{
-            //    hrItem = hrItem,
-            //    srcVideoName = resourcename,
-            //    dstName = temp.Name,
-            //    progress = 0,
-            //    downloadPath = temp.DirectoryName,
-            //    type = DownloadType.结果图片
-            //});
-            // BOCOM.IVX.Framework.Container.Instance.DownloadItemViewModel.UpdateProgress(hrItem, 100);
         }
 
         void barBtnItemSharpen_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

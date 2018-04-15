@@ -41,8 +41,6 @@ namespace com.VehicleAnalyse.Main
                 //this.WindowState = FormWindowState.Maximized;
                 //this.Show();
                 this.ucTaskPage1 = new com.VehicleAnalyse.Main.Views.ucTaskPage();
-                this.ucResultPage1 = new com.VehicleAnalyse.Main.Views.ucResultPage();
-                this.ucCompareSearchResultPage1 = new com.VehicleAnalyse.Main.Views.ucCompareSearchResultPage();
                 // ucTaskPage1
                 // 
                 this.ucTaskPage1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -51,6 +49,15 @@ namespace com.VehicleAnalyse.Main
                 this.ucTaskPage1.Size = new System.Drawing.Size(820, 456);
                 this.ucTaskPage1.TabIndex = 0;
                 // 
+                // 
+                this.xtraTabPage1.Controls.Add(this.ucTaskPage1);
+                Framework.Container.Instance.MainControl  = this;
+                Framework.Container.Instance.EvtAggregator.GetEvent<UserLoginEvent>().Subscribe(OnUserLoggedin);
+            }
+        }
+        private void initSearchResultPage()
+        {
+                this.ucResultPage1 = new com.VehicleAnalyse.Main.Views.ucResultPage();
                 // ucResultPage1
                 // 
                 this.ucResultPage1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -59,30 +66,33 @@ namespace com.VehicleAnalyse.Main
                 this.ucResultPage1.Size = new System.Drawing.Size(820, 456);
                 this.ucResultPage1.TabIndex = 0;
                 // 
-                // ucCompareSearchResultPage1
-                // 
-                this.ucCompareSearchResultPage1.Dock = System.Windows.Forms.DockStyle.Fill;
+                this.xtraTabPage2.Controls.Add(this.ucResultPage1);
+        }
+
+        private void initCompareSearchResultPage()
+        {
+            this.ucCompareSearchResultPage1 = new com.VehicleAnalyse.Main.Views.ucCompareSearchResultPage();
+            // ucCompareSearchResultPage1
+            // 
+            this.ucCompareSearchResultPage1.Dock = System.Windows.Forms.DockStyle.Fill;
                 this.ucCompareSearchResultPage1.Location = new System.Drawing.Point(0, 0);
                 this.ucCompareSearchResultPage1.Name = "ucCompareSearchResultPage1";
                 this.ucCompareSearchResultPage1.Size = new System.Drawing.Size(820, 456);
                 this.ucCompareSearchResultPage1.TabIndex = 0;
-                // 
 
-                this.xtraTabPage1.Controls.Add(this.ucTaskPage1);
-                this.xtraTabPage2.Controls.Add(this.ucResultPage1);
                 this.xtraTabPage3.Controls.Add(this.ucCompareSearchResultPage1);
-
-                Framework.Container.Instance.MainControl  = this;
-                Framework.Container.Instance.EvtAggregator.GetEvent<UserLoginEvent>().Subscribe(OnUserLoggedin);
-            }
         }
-        
+
         private void OnUserLoggedin(LoginToken token)
         {
             if (token == null)
                 this.Close();
             else
+            {
                 barItemStatus.Caption = string.Format("登录服务器: {0}", Framework.Environment.LoggedinToken.ServerIP);
+                initSearchResultPage();
+                initCompareSearchResultPage();
+            }
         }
 
 

@@ -123,16 +123,6 @@ namespace com.VehicleAnalyse.Main.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap bocom {
-            get {
-                object obj = ResourceManager.GetObject("bocom", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
         internal static System.Drawing.Bitmap Crown_18_468571428571px_1194754_easyicon_net {
             get {
                 object obj = ResourceManager.GetObject("Crown_18.468571428571px_1194754_easyicon.net", resourceCulture);

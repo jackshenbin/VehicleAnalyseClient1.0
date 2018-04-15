@@ -12,8 +12,6 @@ using VehicleHelper.DAO;
 using System.IO;
 using System.Diagnostics;
 using VehicleHelper;
-// using com.VehicleAnalyse.DataModel;
-// using BOCOM.DataModel;
 
 namespace com.VehicleAnalyse.Main.Views
 {

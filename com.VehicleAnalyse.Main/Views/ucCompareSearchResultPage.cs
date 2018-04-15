@@ -28,6 +28,7 @@ namespace com.VehicleAnalyse.Main.Views
 
         public ucCompareSearchResultPage()
         {
+
             InitializeComponent();
 
             this.HandleDestroyed += new EventHandler(ucResultPage_HandleDestroyed);
@@ -56,6 +57,7 @@ namespace com.VehicleAnalyse.Main.Views
         {
             if (!DesignMode)
             {
+
                 m_compareViewModel = new CpmpareSearchResultPageViewModel();
                 m_searchViewModel = new SearchSettingsViewModel();
                 m_searchViewModel.TasksChanged += m_searchViewModel_TasksChanged;
@@ -63,7 +65,8 @@ namespace com.VehicleAnalyse.Main.Views
                 m_compareViewModel.SearchResult += new EventHandler(ViewModel_SearchResult);
 
                 Framework.Container.Instance.VVMDataBindings.AddBinding(this.lblCtrlFileName, "Text", m_compareViewModel, "FileName");
-                
+
+
                 this.ucSearchSettings1 = new com.VehicleAnalyse.Main.Views.ucCompareSearchSettingsContainer();
                 // ucSearchSettings1
                 // 
@@ -75,6 +78,7 @@ namespace com.VehicleAnalyse.Main.Views
                 this.ucSearchSettings1.OKClicked += ucSearchSettings1_OKClicked;
                 this.ucSearchSettings1.CancelClicked += ucSearchSettings1_CancelClicked;
                 this.popupControlContainer1.Controls.Add(this.ucSearchSettings1);
+
 
                 Init();
 
@@ -91,9 +95,12 @@ namespace com.VehicleAnalyse.Main.Views
                 //ucSingleResult11.VehicleClick += new EventHandler(ucSingleResult1_VehicleClick);
                 //ucSingleResult12.VehicleClick += new EventHandler(ucSingleResult1_VehicleClick);
 
+
                 ucPlateGroupSubResultPage1.ResultDetailInfoClick += new EventHandler(ucPlateGroupSubResultPage1_ResultDetailInfoClick);
                 ucNoGroupSubResultPage1.ResultDetailInfoClick += new EventHandler(ucNoGroupSubResultPage1_ResultDetailInfoClick);
                 ucNoGroupSubResultPage1.ShowBackwordLink = false;
+
+
             }
         }
 
