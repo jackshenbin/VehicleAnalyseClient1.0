@@ -753,6 +753,7 @@ namespace com.VehicleAnalyse.Main.Views
         
         private void radioGroup1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (m_ViewModel!=null && m_ViewModel.SelectedAnalyseRecord != null)
             ShowVehicleStandardImage(m_ViewModel.SelectedAnalyseRecord);
         }
 

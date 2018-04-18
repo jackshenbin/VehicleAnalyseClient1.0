@@ -228,6 +228,7 @@
             // 
             // ucPictureBoxRegion1
             // 
+            this.ucPictureBoxRegion1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ucPictureBoxRegion1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ucPictureBoxRegion1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ucPictureBoxRegion1.GlobRect = new System.Drawing.Rectangle(0, 0, 0, 0);
@@ -281,7 +282,7 @@
             // checkButtonOther
             // 
             this.checkButtonOther.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.checkButtonOther.Appearance.ForeColor = System.Drawing.Color.Silver;
+            this.checkButtonOther.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.checkButtonOther.Appearance.Options.UseBackColor = true;
             this.checkButtonOther.Appearance.Options.UseForeColor = true;
             this.checkButtonOther.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
@@ -297,7 +298,7 @@
             // checkButtonMonth
             // 
             this.checkButtonMonth.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.checkButtonMonth.Appearance.ForeColor = System.Drawing.Color.Silver;
+            this.checkButtonMonth.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.checkButtonMonth.Appearance.Options.UseBackColor = true;
             this.checkButtonMonth.Appearance.Options.UseForeColor = true;
             this.checkButtonMonth.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
@@ -313,7 +314,7 @@
             // checkButtonWeek
             // 
             this.checkButtonWeek.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.checkButtonWeek.Appearance.ForeColor = System.Drawing.Color.Silver;
+            this.checkButtonWeek.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.checkButtonWeek.Appearance.Options.UseBackColor = true;
             this.checkButtonWeek.Appearance.Options.UseForeColor = true;
             this.checkButtonWeek.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
@@ -329,7 +330,7 @@
             // checkButtonYesterday
             // 
             this.checkButtonYesterday.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.checkButtonYesterday.Appearance.ForeColor = System.Drawing.Color.Silver;
+            this.checkButtonYesterday.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.checkButtonYesterday.Appearance.Options.UseBackColor = true;
             this.checkButtonYesterday.Appearance.Options.UseForeColor = true;
             this.checkButtonYesterday.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
@@ -347,9 +348,10 @@
             this.pictureEdit2.Location = new System.Drawing.Point(5, 232);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.AllowFocused = false;
-            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.pictureEdit2.Properties.NullText = "没有图片";
             this.pictureEdit2.Properties.ShowMenu = false;
             this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pictureEdit2.Size = new System.Drawing.Size(262, 176);
@@ -379,7 +381,6 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Silver;
             this.labelControl2.Location = new System.Drawing.Point(5, 455);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(48, 14);
@@ -404,12 +405,8 @@
             // 
             // simpleButtonComit
             // 
-            this.simpleButtonComit.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.simpleButtonComit.Appearance.BackColor2 = System.Drawing.SystemColors.HotTrack;
-            this.simpleButtonComit.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButtonComit.Appearance.Options.UseBackColor = true;
+            this.simpleButtonComit.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.simpleButtonComit.Appearance.Options.UseFont = true;
-            this.simpleButtonComit.Appearance.Options.UseForeColor = true;
             this.simpleButtonComit.Location = new System.Drawing.Point(59, 598);
             this.simpleButtonComit.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Office2003;
             this.simpleButtonComit.Name = "simpleButtonComit";
@@ -446,10 +443,9 @@
             // checkButtonPlateGroup
             // 
             this.checkButtonPlateGroup.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.checkButtonPlateGroup.Appearance.ForeColor = System.Drawing.Color.Silver;
+            this.checkButtonPlateGroup.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.checkButtonPlateGroup.Appearance.Options.UseBackColor = true;
             this.checkButtonPlateGroup.Appearance.Options.UseForeColor = true;
-            this.checkButtonPlateGroup.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.checkButtonPlateGroup.GroupIndex = 2;
             this.checkButtonPlateGroup.Location = new System.Drawing.Point(84, 0);
             this.checkButtonPlateGroup.Name = "checkButtonPlateGroup";
@@ -463,10 +459,9 @@
             // checkButtonAll
             // 
             this.checkButtonAll.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.checkButtonAll.Appearance.ForeColor = System.Drawing.Color.Silver;
+            this.checkButtonAll.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.checkButtonAll.Appearance.Options.UseBackColor = true;
             this.checkButtonAll.Appearance.Options.UseForeColor = true;
-            this.checkButtonAll.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.checkButtonAll.GroupIndex = 2;
             this.checkButtonAll.Location = new System.Drawing.Point(3, 0);
             this.checkButtonAll.Name = "checkButtonAll";

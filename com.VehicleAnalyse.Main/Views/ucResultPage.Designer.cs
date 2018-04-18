@@ -798,6 +798,7 @@
             // 
             // splitContainerControl3
             // 
+            this.splitContainerControl3.Collapsed = true;
             this.splitContainerControl3.CollapsePanel = DevExpress.XtraEditors.SplitCollapsePanel.Panel2;
             this.splitContainerControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerControl3.FixedPanel = DevExpress.XtraEditors.SplitFixedPanel.Panel2;
@@ -819,7 +820,7 @@
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl2.Location = new System.Drawing.Point(0, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(322, 187);
+            this.groupControl2.Size = new System.Drawing.Size(322, 440);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "车辆详细信息";
             // 
@@ -829,7 +830,7 @@
             this.gridControl2.Location = new System.Drawing.Point(2, 22);
             this.gridControl2.MainView = this.gridView3;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(318, 163);
+            this.gridControl2.Size = new System.Drawing.Size(318, 416);
             this.gridControl2.TabIndex = 0;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3,
@@ -891,7 +892,7 @@
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(322, 253);
+            this.groupControl3.Size = new System.Drawing.Size(0, 0);
             this.groupControl3.TabIndex = 15;
             this.groupControl3.Text = "车型标准图";
             this.groupControl3.SizeChanged += new System.EventHandler(this.groupControl3_SizeChanged);
@@ -901,16 +902,16 @@
             this.panelControl3.Controls.Add(this.radioGroup1);
             this.panelControl3.Controls.Add(this.lblCtrlVehicleModel);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl3.Location = new System.Drawing.Point(2, 22);
+            this.panelControl3.Location = new System.Drawing.Point(0, 21);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(318, 30);
+            this.panelControl3.Size = new System.Drawing.Size(0, 30);
             this.panelControl3.TabIndex = 15;
             // 
             // radioGroup1
             // 
             this.radioGroup1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioGroup1.EditValue = ((byte)(0));
-            this.radioGroup1.Location = new System.Drawing.Point(187, 5);
+            this.radioGroup1.Location = new System.Drawing.Point(-130, 5);
             this.radioGroup1.Name = "radioGroup1";
             this.radioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
@@ -928,18 +929,18 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCtrlVehicleModel.AutoEllipsis = true;
             this.lblCtrlVehicleModel.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblCtrlVehicleModel.Location = new System.Drawing.Point(4, 8);
+            this.lblCtrlVehicleModel.Location = new System.Drawing.Point(3, 8);
             this.lblCtrlVehicleModel.Name = "lblCtrlVehicleModel";
-            this.lblCtrlVehicleModel.Size = new System.Drawing.Size(316, 14);
+            this.lblCtrlVehicleModel.Size = new System.Drawing.Size(0, 14);
             this.lblCtrlVehicleModel.TabIndex = 0;
-            this.lblCtrlVehicleModel.Text = "车型 XXX";
+            this.lblCtrlVehicleModel.Text = "车型";
             // 
             // picEditStandard
             // 
             this.picEditStandard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.picEditStandard.Location = new System.Drawing.Point(2, 54);
+            this.picEditStandard.Location = new System.Drawing.Point(0, 53);
             this.picEditStandard.Name = "picEditStandard";
             this.picEditStandard.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.picEditStandard.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
@@ -948,7 +949,7 @@
             this.picEditStandard.Properties.LookAndFeel.SkinName = "DevExpress Dark Style";
             this.picEditStandard.Properties.NullText = "没有图片";
             this.picEditStandard.Properties.ShowMenu = false;
-            this.picEditStandard.Size = new System.Drawing.Size(318, 250);
+            this.picEditStandard.Size = new System.Drawing.Size(0, 0);
             this.picEditStandard.TabIndex = 14;
             // 
             // gridControlSummary

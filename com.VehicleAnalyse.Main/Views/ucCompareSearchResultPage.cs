@@ -568,11 +568,11 @@ namespace com.VehicleAnalyse.Main.Views
 
         private void checkButtonToday_CheckedChanged(object sender, EventArgs e)
         {
-            checkButtonToday.ForeColor = Color.Silver;
-            checkButtonYesterday.ForeColor = Color.Silver;
-            checkButtonWeek.ForeColor = Color.Silver;
-            checkButtonMonth.ForeColor = Color.Silver;
-            checkButtonOther.ForeColor = Color.Silver;
+            checkButtonToday.ForeColor = Color.Gray;
+            checkButtonYesterday.ForeColor = Color.Gray;
+            checkButtonWeek.ForeColor = Color.Gray;
+            checkButtonMonth.ForeColor = Color.Gray;
+            checkButtonOther.ForeColor = Color.Gray;
             if (checkButtonToday.Checked)
             {
                 checkButtonToday.ForeColor = Color.Black;
@@ -584,11 +584,11 @@ namespace com.VehicleAnalyse.Main.Views
 
         private void checkButtonYesterday_CheckedChanged(object sender, EventArgs e)
         {
-            checkButtonToday.ForeColor = Color.Silver;
-            checkButtonYesterday.ForeColor = Color.Silver;
-            checkButtonWeek.ForeColor = Color.Silver;
-            checkButtonMonth.ForeColor = Color.Silver;
-            checkButtonOther.ForeColor = Color.Silver;
+            checkButtonToday.ForeColor = Color.Gray;
+            checkButtonYesterday.ForeColor = Color.Gray;
+            checkButtonWeek.ForeColor = Color.Gray;
+            checkButtonMonth.ForeColor = Color.Gray;
+            checkButtonOther.ForeColor = Color.Gray;
 
             if (checkButtonYesterday.Checked)
             {
@@ -601,11 +601,11 @@ namespace com.VehicleAnalyse.Main.Views
 
         private void checkButtonWeek_CheckedChanged(object sender, EventArgs e)
         {
-            checkButtonToday.ForeColor = Color.Silver;
-            checkButtonYesterday.ForeColor = Color.Silver;
-            checkButtonWeek.ForeColor = Color.Silver;
-            checkButtonMonth.ForeColor = Color.Silver;
-            checkButtonOther.ForeColor = Color.Silver;
+            checkButtonToday.ForeColor = Color.Gray;
+            checkButtonYesterday.ForeColor = Color.Gray;
+            checkButtonWeek.ForeColor = Color.Gray;
+            checkButtonMonth.ForeColor = Color.Gray;
+            checkButtonOther.ForeColor = Color.Gray;
 
             if (checkButtonWeek.Checked)
             {
@@ -617,11 +617,11 @@ namespace com.VehicleAnalyse.Main.Views
 
         private void checkButtonMonth_CheckedChanged(object sender, EventArgs e)
         {
-            checkButtonToday.ForeColor = Color.Silver;
-            checkButtonYesterday.ForeColor = Color.Silver;
-            checkButtonWeek.ForeColor = Color.Silver;
-            checkButtonMonth.ForeColor = Color.Silver;
-            checkButtonOther.ForeColor = Color.Silver;
+            checkButtonToday.ForeColor = Color.Gray;
+            checkButtonYesterday.ForeColor = Color.Gray;
+            checkButtonWeek.ForeColor = Color.Gray;
+            checkButtonMonth.ForeColor = Color.Gray;
+            checkButtonOther.ForeColor = Color.Gray;
 
             if (checkButtonMonth.Checked)
             {
@@ -636,11 +636,11 @@ namespace com.VehicleAnalyse.Main.Views
 
         private void checkButtonOther_CheckedChanged(object sender, EventArgs e)
         {
-            checkButtonToday.ForeColor = Color.Silver;
-            checkButtonYesterday.ForeColor = Color.Silver;
-            checkButtonWeek.ForeColor = Color.Silver;
-            checkButtonMonth.ForeColor = Color.Silver;
-            checkButtonOther.ForeColor = Color.Silver;
+            checkButtonToday.ForeColor = Color.Gray;
+            checkButtonYesterday.ForeColor = Color.Gray;
+            checkButtonWeek.ForeColor = Color.Gray;
+            checkButtonMonth.ForeColor = Color.Gray;
+            checkButtonOther.ForeColor = Color.Gray;
 
             if (checkButtonOther.Checked)
             {
@@ -655,8 +655,8 @@ namespace com.VehicleAnalyse.Main.Views
 
         private void checkButton1_CheckedChanged(object sender, EventArgs e)
         {
-            checkButtonAll.ForeColor = Color.Silver;
-            checkButtonPlateGroup.ForeColor = Color.Silver;
+            checkButtonAll.ForeColor = Color.Gray;
+            checkButtonPlateGroup.ForeColor = Color.Gray;
 
             if (checkButtonAll.Checked)
             {
@@ -667,8 +667,8 @@ namespace com.VehicleAnalyse.Main.Views
 
         private void checkButtonPlateGroup_CheckedChanged(object sender, EventArgs e)
         {
-            checkButtonAll.ForeColor = Color.Silver;
-            checkButtonPlateGroup.ForeColor = Color.Silver;
+            checkButtonAll.ForeColor = Color.Gray;
+            checkButtonPlateGroup.ForeColor = Color.Gray;
 
             if (checkButtonPlateGroup.Checked)
             {

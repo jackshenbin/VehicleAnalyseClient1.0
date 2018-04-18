@@ -152,25 +152,25 @@
             // xtraTabPage1
             // 
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(813, 630);
+            this.xtraTabPage1.Size = new System.Drawing.Size(815, 632);
             this.xtraTabPage1.Text = "xtraTabPage1";
             // 
             // xtraTabPage2
             // 
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(813, 630);
+            this.xtraTabPage2.Size = new System.Drawing.Size(815, 632);
             this.xtraTabPage2.Text = "xtraTabPage2";
             // 
             // xtraTabPage3
             // 
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(813, 630);
+            this.xtraTabPage3.Size = new System.Drawing.Size(815, 632);
             this.xtraTabPage3.Text = "xtraTabPage3";
             // 
             // pictureEdit1
             // 
             this.pictureEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureEdit1.Location = new System.Drawing.Point(739, 0);
+            this.pictureEdit1.Location = new System.Drawing.Point(680, 3);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.AllowFocused = false;
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -183,57 +183,67 @@
             // 
             // checkButtonTask
             // 
-            this.checkButtonTask.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.checkButtonTask.Appearance.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold);
+            this.checkButtonTask.Appearance.Options.UseFont = true;
             this.checkButtonTask.Checked = true;
             this.checkButtonTask.GroupIndex = 1;
             this.checkButtonTask.Image = global::com.VehicleAnalyse.Main.Properties.Resources.task_37_088042049934px_1202886_easyicon_net;
-            this.checkButtonTask.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.checkButtonTask.Location = new System.Drawing.Point(305, 2);
+            this.checkButtonTask.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.checkButtonTask.Location = new System.Drawing.Point(12, 0);
             this.checkButtonTask.LookAndFeel.SkinName = "McSkin";
             this.checkButtonTask.Name = "checkButtonTask";
-            this.checkButtonTask.Size = new System.Drawing.Size(45, 45);
+            this.checkButtonTask.Size = new System.Drawing.Size(113, 45);
             this.checkButtonTask.TabIndex = 49;
+            this.checkButtonTask.Text = "任务管理";
+            this.checkButtonTask.ToolTip = "任务管理";
             this.checkButtonTask.CheckedChanged += new System.EventHandler(this.checkButtonTask_CheckedChanged);
             // 
             // checkButtonCompare
             // 
-            this.checkButtonCompare.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.checkButtonCompare.Appearance.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold);
+            this.checkButtonCompare.Appearance.Options.UseFont = true;
             this.checkButtonCompare.GroupIndex = 1;
             this.checkButtonCompare.Image = global::com.VehicleAnalyse.Main.Properties.Resources.Detective_31_305719921105px_1180787_easyicon_net;
-            this.checkButtonCompare.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.checkButtonCompare.Location = new System.Drawing.Point(407, 1);
+            this.checkButtonCompare.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.checkButtonCompare.Location = new System.Drawing.Point(250, 0);
             this.checkButtonCompare.LookAndFeel.SkinName = "McSkin";
             this.checkButtonCompare.Name = "checkButtonCompare";
-            this.checkButtonCompare.Size = new System.Drawing.Size(45, 45);
+            this.checkButtonCompare.Size = new System.Drawing.Size(113, 45);
             this.checkButtonCompare.TabIndex = 54;
             this.checkButtonCompare.TabStop = false;
+            this.checkButtonCompare.Text = "以图搜车";
+            this.checkButtonCompare.ToolTip = "以图搜车";
             this.checkButtonCompare.CheckedChanged += new System.EventHandler(this.checkButtonCompare_CheckedChanged);
             // 
             // checkButtonSearch
             // 
-            this.checkButtonSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.checkButtonSearch.Appearance.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold);
+            this.checkButtonSearch.Appearance.Options.UseFont = true;
             this.checkButtonSearch.GroupIndex = 1;
             this.checkButtonSearch.Image = global::com.VehicleAnalyse.Main.Properties.Resources.target_32px_1202885_easyicon_net;
-            this.checkButtonSearch.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.checkButtonSearch.Location = new System.Drawing.Point(356, 1);
+            this.checkButtonSearch.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.checkButtonSearch.Location = new System.Drawing.Point(131, 0);
             this.checkButtonSearch.LookAndFeel.SkinName = "McSkin";
             this.checkButtonSearch.Name = "checkButtonSearch";
-            this.checkButtonSearch.Size = new System.Drawing.Size(45, 45);
+            this.checkButtonSearch.Size = new System.Drawing.Size(113, 45);
             this.checkButtonSearch.TabIndex = 55;
             this.checkButtonSearch.TabStop = false;
+            this.checkButtonSearch.Text = "精确查询";
+            this.checkButtonSearch.ToolTip = "精确查询";
             this.checkButtonSearch.CheckedChanged += new System.EventHandler(this.checkButtonSearch_CheckedChanged);
             // 
             // simpleButtonconfig
             // 
             this.simpleButtonconfig.AllowFocus = false;
-            this.simpleButtonconfig.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.simpleButtonconfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.simpleButtonconfig.Image = global::com.VehicleAnalyse.Main.Properties.Resources.Administrative_Tools_32px_1180764_easyicon_net;
             this.simpleButtonconfig.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButtonconfig.Location = new System.Drawing.Point(458, 0);
+            this.simpleButtonconfig.Location = new System.Drawing.Point(769, -1);
             this.simpleButtonconfig.Name = "simpleButtonconfig";
-            this.simpleButtonconfig.Size = new System.Drawing.Size(45, 45);
+            this.simpleButtonconfig.Size = new System.Drawing.Size(48, 45);
             this.simpleButtonconfig.TabIndex = 61;
             this.simpleButtonconfig.TabStop = false;
+            this.simpleButtonconfig.ToolTip = "系统设置";
             this.simpleButtonconfig.Click += new System.EventHandler(this.simpleButtonconfig_Click_1);
             // 
             // XtraMainForm
@@ -253,7 +263,6 @@
             this.Controls.Add(this.barDockControlTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.LookAndFeel.SkinName = "McSkin";
-            this.LookAndFeel.UseDefaultLookAndFeel = true;
             this.Name = "XtraMainForm";
             this.Text = "车辆识别客户端";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

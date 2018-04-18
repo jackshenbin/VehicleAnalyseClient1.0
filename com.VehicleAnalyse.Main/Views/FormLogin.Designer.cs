@@ -34,7 +34,6 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.textEditUser = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.textEditPass = new DevExpress.XtraEditors.TextEdit();
             this.spinEditServerPort = new DevExpress.XtraEditors.SpinEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.spinEditSearchPort = new DevExpress.XtraEditors.SpinEdit();
@@ -43,9 +42,9 @@
             this.textEditServerIP = new DevComponents.Editors.IpAddressInput();
             this.textEditSearchIP = new DevComponents.Editors.IpAddressInput();
             this.textEditUploadIP = new DevComponents.Editors.IpAddressInput();
+            this.textEditPass = new DevComponents.DotNetBar.Controls.TextBoxX();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditUser.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditPass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinEditServerPort.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinEditSearchPort.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinEditUploadPort.Properties)).BeginInit();
@@ -106,17 +105,6 @@
             this.labelControl4.Size = new System.Drawing.Size(48, 14);
             this.labelControl4.TabIndex = 30;
             this.labelControl4.Text = "主机地址";
-            // 
-            // textEditPass
-            // 
-            this.textEditPass.EditValue = "admin";
-            this.textEditPass.Location = new System.Drawing.Point(115, 136);
-            this.textEditPass.Name = "textEditPass";
-            this.textEditPass.Properties.MaxLength = 31;
-            this.textEditPass.Properties.PasswordChar = '*';
-            this.textEditPass.Properties.UseSystemPasswordChar = true;
-            this.textEditPass.Size = new System.Drawing.Size(128, 20);
-            this.textEditPass.TabIndex = 4;
             // 
             // spinEditServerPort
             // 
@@ -253,12 +241,27 @@
             this.textEditUploadIP.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.textEditUploadIP.TabIndex = 2;
             // 
+            // textEditPass
+            // 
+            // 
+            // 
+            // 
+            this.textEditPass.Border.Class = "TextBoxBorder";
+            this.textEditPass.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.textEditPass.Location = new System.Drawing.Point(115, 138);
+            this.textEditPass.Name = "textEditPass";
+            this.textEditPass.Size = new System.Drawing.Size(128, 22);
+            this.textEditPass.TabIndex = 32;
+            this.textEditPass.Text = "admin";
+            this.textEditPass.UseSystemPasswordChar = true;
+            // 
             // FormLogin
             // 
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(372, 217);
+            this.Controls.Add(this.textEditPass);
             this.Controls.Add(this.textEditUploadIP);
             this.Controls.Add(this.textEditSearchIP);
             this.Controls.Add(this.textEditServerIP);
@@ -273,7 +276,6 @@
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.textEditUser);
             this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.textEditPass);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -285,7 +287,6 @@
             this.Text = "请登录服务器";
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditUser.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditPass.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinEditServerPort.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinEditSearchPort.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinEditUploadPort.Properties)).EndInit();
@@ -305,7 +306,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit textEditUser;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit textEditPass;
         private DevExpress.XtraEditors.SpinEdit spinEditServerPort;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.SpinEdit spinEditSearchPort;
@@ -314,5 +314,6 @@
         private DevComponents.Editors.IpAddressInput textEditServerIP;
         private DevComponents.Editors.IpAddressInput textEditSearchIP;
         private DevComponents.Editors.IpAddressInput textEditUploadIP;
+        private DevComponents.DotNetBar.Controls.TextBoxX textEditPass;
     }
 }

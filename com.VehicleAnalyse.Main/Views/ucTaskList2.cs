@@ -94,13 +94,14 @@ namespace com.VehicleAnalyse.Main.Views
         {
             if (e.Column.FieldName == "Status" && e.RowHandle >= 0)
             {
+                e.Appearance.Font = new System.Drawing.Font(DefaultFont, FontStyle.Bold);
                 string AnalysingError = DataModel.Constant.TaskStatusInfos.FirstOrDefault(it => it.Type == TaskStatus.AnalysingError).Name;
                 if (e.CellValue.ToString() == AnalysingError)
                     e.Appearance.ForeColor = Color.DarkRed;
 
                 string Finished = DataModel.Constant.TaskStatusInfos.FirstOrDefault(it => it.Type == TaskStatus.Finished).Name;
                 if (e.CellValue.ToString() == Finished)
-                    e.Appearance.ForeColor = Color.LightSkyBlue;
+                    e.Appearance.ForeColor = Color.GreenYellow;
 
             }
 
